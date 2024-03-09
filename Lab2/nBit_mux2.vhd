@@ -12,7 +12,7 @@ entity nBit_mux2 is
 		outp : out std_logic_vector(n-1 downto 0));
 end nBit_mux2;
 
-architecture rtl of nBit_mux2 is
+architecture structural of nBit_mux2 is
 
 -- conmponents
 --none
@@ -27,4 +27,4 @@ begin
 	tsb1 : entity work.nBit_tristate_buffer(structural)
 		generic map(n)
 		port map(sel, inp1, outp);
-end rtl;
+end structural;
