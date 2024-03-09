@@ -1,5 +1,5 @@
 EDA Netlist Writer report for MIPC_RISK_SimpleCPU
-Wed Mar 06 17:02:48 2024
+Sat Mar 09 02:39:43 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Mar 06 17:02:48 2024 ;
+; EDA Netlist Writer Status ; Successful - Sat Mar 09 02:39:43 2024 ;
 ; Revision Name             ; MIPC_RISK_SimpleCPU                   ;
 ; Top-level Entity Name     ; top_level                             ;
 ; Family                    ; Cyclone IV E                          ;
@@ -50,8 +50,7 @@ applicable agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate netlist for functional simulation only                                                   ; Off                       ;
-; Time scale                                                                                        ; 1 ps                      ;
+; Generate netlist for functional simulation only                                                   ; On                        ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -66,20 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                   ;
-+------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                              ;
-+------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU_7_1200mv_85c_slow.vo     ;
-; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU_7_1200mv_0c_slow.vo      ;
-; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU_min_1200mv_0c_fast.vo    ;
-; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU.vo                       ;
-; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU_7_1200mv_85c_v_slow.sdo  ;
-; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU_7_1200mv_0c_v_slow.sdo   ;
-; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU_min_1200mv_0c_v_fast.sdo ;
-; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU_v.sdo                    ;
-+------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                             ;
++--------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                        ;
++--------------------------------------------------------------------------------------------------------+
+; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//MIPC_RISK_SimpleCPU.vo ;
++--------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -101,20 +93,13 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Wed Mar 06 17:02:46 2024
-Info: Command: quartus_eda --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim/ MIPC_RISK_SimpleCPU -c MIPC_RISK_SimpleCPU
-Info (204019): Generated file MIPC_RISK_SimpleCPU_7_1200mv_85c_slow.vo in folder "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPC_RISK_SimpleCPU_7_1200mv_0c_slow.vo in folder "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPC_RISK_SimpleCPU_min_1200mv_0c_fast.vo in folder "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//" for EDA simulation tool
+    Info: Processing started: Sat Mar 09 02:39:42 2024
+Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim/ MIPC_RISK_SimpleCPU -c MIPC_RISK_SimpleCPU
 Info (204019): Generated file MIPC_RISK_SimpleCPU.vo in folder "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPC_RISK_SimpleCPU_7_1200mv_85c_v_slow.sdo in folder "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPC_RISK_SimpleCPU_7_1200mv_0c_v_slow.sdo in folder "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPC_RISK_SimpleCPU_min_1200mv_0c_v_fast.sdo in folder "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file MIPC_RISK_SimpleCPU_v.sdo in folder "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4625 megabytes
-    Info: Processing ended: Wed Mar 06 17:02:48 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4566 megabytes
+    Info: Processing ended: Sat Mar 09 02:39:43 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

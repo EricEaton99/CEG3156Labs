@@ -53,13 +53,16 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/simulation/qsim/" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name BDF_FILE top_level.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE component_test.vwf
 set_global_assignment -name VHDL_FILE CPU_Types.vhd
+set_global_assignment -name VHDL_FILE nBit_cla4_adder.vhd
+set_global_assignment -name VHDL_FILE cla4_adder.vhd
+set_global_assignment -name VHDL_FILE half_adder.vhd
 set_global_assignment -name VHDL_FILE tristate_buffer.vhd
 set_global_assignment -name VHDL_FILE registers.vhd
 set_global_assignment -name VHDL_FILE nBit_mux2.vhd
@@ -76,4 +79,8 @@ set_global_assignment -name VHDL_FILE d_flipflop_en.vhd
 set_global_assignment -name VHDL_FILE nBit_decoder.vhd
 set_global_assignment -name VHDL_FILE nBit_tristate_buffer.vhd
 set_global_assignment -name VHDL_FILE nBit_mux_2powMBits.vhd
+set_global_assignment -name VHDL_FILE ALU_Simple.vhd
+set_global_assignment -name VHDL_FILE AU_Simple.vhd
+set_global_assignment -name VHDL_FILE LU_Simple.vhd
+set_global_assignment -name VHDL_FILE nBit_adder_subtraction_block.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -4,54 +4,54 @@ K3
 cModel Technology
 Z0 dC:\Users\Wring\Documents\_uOttawa\2024Winter\CEG3156\Lab2\QII\simulation\qsim
 vtop_level
-Z1 IdcfMLCJMi8Fa5W^3`DMPJ2
-Z2 VcEKjTan1jooH9mGSEc]?53
-Z3 dC:\Users\Wring\Documents\_uOttawa\2024Winter\CEG3156\Labs\Lab2\simulation\qsim
-Z4 w1709762567
-Z5 8MIPC_RISK_SimpleCPU.vo
-Z6 FMIPC_RISK_SimpleCPU.vo
+Z1 !s100 Mf;9V?S1@JgQ]a_08ESXK3
+Z2 Ii`D9X[jT@Ib=WGj3fn5YV3
+Z3 V`NTLKhzTl?hk:ac^[G^:Q3
+Z4 dC:\Users\Wring\Documents\_uOttawa\2024Winter\CEG3156\Labs\Lab2\simulation\qsim
+Z5 w1709969983
+Z6 8MIPC_RISK_SimpleCPU.vo
+Z7 FMIPC_RISK_SimpleCPU.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|MIPC_RISK_SimpleCPU.vo|
-Z9 o-work work -O0
+Z9 !s90 -work|work|MIPC_RISK_SimpleCPU.vo|
+Z10 o-work work -O0
 !i10b 1
-Z10 !s100 VlUb7aa:F^l2RK:mNF]6N2
 !s85 0
-Z11 !s108 1709762568.584000
+Z11 !s108 1709969983.407000
 Z12 !s107 MIPC_RISK_SimpleCPU.vo|
 !s101 -O0
 vtop_level_vlg_check_tst
 !i10b 1
-Z13 !s100 `Wca<kaNazCdbB9DK>H6S2
-Z14 IS8Vb=9U5M?h]@UL1Wme4:2
-Z15 VhS`c4KkB1l2ZoKNjlTOKU1
-R3
-Z16 w1709762565
+Z13 !s100 jiT[`WL9WDEhfYQ6nJ0RS1
+Z14 INblQ[X?HNnb[OCCaSJ95a2
+Z15 VZM1eT6N:8fdelDPJ4TJhN2
+R4
+Z16 w1709969982
 Z17 8component_test.vwf.vt
 Z18 Fcomponent_test.vwf.vt
-L0 69
-R7
+L0 61
+R8
 r1
 !s85 0
 31
-Z19 !s108 1709762568.820000
+Z19 !s108 1709969983.467000
 Z20 !s107 component_test.vwf.vt|
 Z21 !s90 -work|work|component_test.vwf.vt|
 !s101 -O0
-R9
+R10
 vtop_level_vlg_sample_tst
 !i10b 1
-Z22 !s100 V?a_NlXXmK:lE@NLgIX613
-Z23 IS3R]<L<LYbV[Je>onalC;0
-Z24 V66<=9fCIVLeOLnM@@lR2T3
-R3
+Z22 !s100 JDQBc^[0YEYoOM_Ffz5Th0
+Z23 I=Rk_ZBWTlV?]_P^;K9WLY2
+Z24 VdX;h9`6OBQ@NHY_F5L]7o1
+R4
 R16
 R17
 R18
 L0 29
-R7
+R8
 r1
 !s85 0
 31
@@ -59,18 +59,18 @@ R19
 R20
 R21
 !s101 -O0
-R9
+R10
 vtop_level_vlg_vec_tst
 !i10b 1
-Z25 !s100 l8iW0eY63IWWGZ^ledj;i0
-Z26 I@znANJeFZ:mHdc<12X:J20
-Z27 V=nL=_2N5S:^=<U4>RnULe1
-R3
+!s100 ?nB@eYQD<gB_6FgNHjfTh3
+INZY^ngo;OYo?<oG`mK8U^2
+Z25 V=nL=_2N5S:^=<U4>RnULe1
+R4
 R16
 R17
 R18
-Z28 L0 1305
-R7
+Z26 L0 794
+R8
 r1
 !s85 0
 31
@@ -78,4 +78,4 @@ R19
 R20
 R21
 !s101 -O0
-R9
+R10
