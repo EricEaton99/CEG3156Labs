@@ -69,7 +69,6 @@ set_global_assignment -name VHDL_FILE nBit_mux2.vhd
 set_global_assignment -name VHDL_FILE mux_2powMBits.vhd
 set_global_assignment -name VHDL_FILE mux2.vhd
 set_global_assignment -name VHDL_FILE MIPC_RISK_SimpleCPU.vhd
-set_global_assignment -name VHDL_FILE nBit_extend_mBits.vhd
 set_global_assignment -name VHDL_FILE nBit_inc1.vhd
 set_global_assignment -name VHDL_FILE nBit_reg.vhd
 set_global_assignment -name VHDL_FILE nBit_reg_en.vhd
@@ -83,4 +82,5 @@ set_global_assignment -name VHDL_FILE ALU_Simple.vhd
 set_global_assignment -name VHDL_FILE AU_Simple.vhd
 set_global_assignment -name VHDL_FILE LU_Simple.vhd
 set_global_assignment -name VHDL_FILE nBit_adder_subtraction_block.vhd
+set_global_assignment -name VHDL_FILE MIPS_RISK_SingleCycle_instruction_breakdown.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

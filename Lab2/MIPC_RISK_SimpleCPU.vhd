@@ -2,95 +2,133 @@
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-
+use ieee.numeric_std.all;
 
 entity MIPS_RISK_SingleCycle is
-	generic ( 
-		isz : positive := 32;	-- instruction size
-		itsz : positive := 6;	-- instruction type size
-		dsz : positive := 32;	-- data size
-		dasz : positive := 5);	-- data address size
 	port(
 		clk, global_reset : in std_logic);
 end MIPS_RISK_SingleCycle;
 
-architecture rtl of MIPS_RISK_SingleCycle is
 
--- conmponents
-
----- PC
-component nBit_reg is
-generic ( n : positive := 4 );
-port(
-	parallel_in : in std_logic_vector(n-1 downto 0);		--preset, clear could be masks with preset = !clear
-	clk, preset, clear : in std_logic;
-	q, q_not: out std_logic_vector(n-1 downto 0));
-end component;
-
--- inc1
-component nBit_inc1 is
-generic ( n : positive := 4 );
-port(
-	a : in std_logic_vector(n-1 downto 0);
-	a_inc1 : out std_logic_vector(n-1 downto 0));
-end component;
-
----- InstMem
---component InstMem is
---generic ( n : positive := 8 );
---port(
---	read_address : in std_logic_vector(n-1 downto 0);
---	instruction : out std_logic_vector(n-1 downto 0));
---end component;
-
--- SignExtend
--- nBit_extend
-component nBit_extend_mBits is
-generic ( 
-	n : positive := 8;
-	m : positive := 8);
-port(
-	inp : in std_logic_vector(n-1 downto 0);
-	outp : out std_logic_vector(n+m-1 downto 0));
-end component;
-
----- Control
---component Control is
---generic ( isz : positive := 32 );
---generic ( itsz : positive := 6 );
---port(
---	inst : in std_logic_vector(isz-1 downto isz-itsz);
---	reg_dst, jump, beq, bne, alu_src : out std_logic;
---	mem_read, mem_to_reg, mem_write, reg_write : out std_logic;
---	alu_op : in std_logic_vector(2 downto 0));
---end component;
-
--- mux2
-component nBit_mux2 is
-	generic ( n : positive := 4 );
-	port(
-		sel : in std_logic;
-		inp0, inp1 : in std_logic_vector(n-1 downto 0);
-		outp : out std_logic_vector(n-1 downto 0));
-end component;
-
--- Registers
-component Registers is
-	generic ( 
-		isz : positive := 4;
-		dasz : positive := 4);
-	port(
-		reg1_adr, reg2_adr, write_adr : in std_logic_vector(dasz-1 downto 0);
-		outp : out std_logic_vector(isz-1 downto 0));
-end component;
-
--- ALU
--- ALU_control
--- DataMem
+architecture structural of MIPS_RISK_SingleCycle is
 
 -- wires
---none
+constant isz_static : positive := 2;	--log2(isz/8);
+constant isz : positive := 32;	-- instruction size
+constant itsz : positive := 6;	-- instruction type size
+constant dsz : positive := 32;	-- data size
+constant dasz : positive := 5;	-- data address size
+constant asz : positive := 16;	-- address size
+		
+signal PC, PC_inc, PC_branch, PC_next : std_logic_vector(isz-1 downto 0);
+signal instruction : std_logic_vector(isz-1 downto 0);
+signal REG_write_data, REG_data1, REG_data2 : std_logic_vector(dsz-1 downto 0);
+signal address_extended : std_logic_vector(dsz-1 downto 0);
+
+-- Control signals //I use a CAPS convention for core components of a CPU
+signal REG_dst, REG_write, ALU_src, PC_src, MEM_write, MEM_read, MEM_to_REG: std_logic;
+signal ALU_op : std_logic_vector(5 downto 0);
+signal ALU_ctrl : std_logic_vector(2 downto 0);
+
+-- instruction part
+signal instruction_type : std_logic_vector(itsz-1 downto 0);
+signal REG_adr1, REG_adr2, REG_write_adr, REG_write_adr_t : std_logic_vector(dasz-1 downto 0);
+signal ALU_shamt : std_logic_vector(10 downto 6);
+signal ALU_funct : std_logic_vector(5 downto 0);
+signal address : std_logic_vector(asz-1 downto 0);
+
+-- ALU signals
+signal ALU_A, ALU_B, ALU_result : std_logic_vector(dsz-1 downto 0);
+signal ALU_zero, ALU_c_out, ALU_overflow : std_logic;
+
+-- MEM signals
+signal MEM_read_data : std_logic_vector(dsz-1 downto 0);
 
 begin
+
+	-- patterned after:
+	-- uOttawa CEG 3156 - slideset BML4 - slide 19 
+	-- https://uottawa.brightspace.com/d2l/le/content/417607/viewContent/5836345/View
+
+	PC_reg : entity work.nBit_reg(structural)
+		generic map(isz)
+		port map(PC_next, 	clk, '1', global_reset, PC, open);
+			-- parallel_in, clk, preset, clear, q, q_not
 	
-end rtl;
+	PC_inc(isz_static-1 downto 0) <= PC(isz_static-1 downto 0);
+	PC_inc_adder : entity work.nBit_inc1(structural)
+		generic map(isz-isz_static)
+		port map(PC(isz-1 downto isz_static), PC_inc(isz-1 downto isz_static));
+			-- a, a_inc1
+
+	
+	-- IMEM here
+	--		in: read_address
+	--		out: instruction
+	
+	
+	inst_breakdown : entity work.MIPS_RISK_SingleCycle_instruction_breakdown(structural)
+		port map(
+			instruction, 
+			instruction_type, 
+			REG_adr1, REG_adr2, REG_write_adr_t,
+			ALU_shamt, 
+			ALU_funct,
+			address);
+	
+	
+	-- Control here
+	--		in: instruction
+	--		out: 	REG_dst, branch, MEM_read, MEM_to_REG, ALU_op, MEM_write, ALU_src, REG_write
+	
+	
+	REG_mux : entity work.nBit_mux2(structural)
+		generic map(dsz)
+		port map(REG_dst, REG_write_adr_t, REG_adr2, REG_write_adr);
+	
+	registers : entity work.reg_block_r2w1(structural)
+		generic map(dsz, dasz)
+		port map(clk, global_reset, REG_write,
+			REG_adr1, REG_adr2, REG_write_adr,
+			REG_write_data, 
+			REG_data1, REG_data2);
+	
+	address_extended(isz-1 downto asz+isz_static) <= (others => address(asz-1));
+	address_extended(asz+isz_static-1 downto isz_static) <= address;
+	address_extended(isz_static-1 downto 0) <= (others => '0');
+	
+	PC_branch_adder : entity work.nBit_cla4_adder(structural)
+		generic map(isz)
+		port map(PC_inc, address_extended, '0', PC_branch, open, open);
+			-- a, b, c_in, sum, c_out, overflow
+
+	PC_mux : entity work.nBit_mux2(structural)
+		generic map(dsz)
+		port map(PC_src, PC_branch, PC_inc, PC_next);
+		
+	
+	-- DMEM here
+	--		in: ALU_op, ALU_funct
+	--		out: ALU_ctrl
+	
+	
+	ALU_A <= REG_data1;
+	ALU_mux : entity work.nBit_mux2(structural)
+		generic map(dsz)
+		port map(ALU_src, address_extended, REG_data2, ALU_B);
+	
+	ALU : entity work.ALU_Simple(structural)
+		generic map(dsz)
+		port map(ALU_A, ALU_B, ALU_ctrl, ALU_result, ALU_zero, ALU_c_out, ALU_overflow);
+				-- A, B, op_sel, result, zero, c_out, overflow
+	
+	
+	-- DMEM here
+	--		in: ALU_result, REG_data2
+	--		out: MEM_read_data
+	
+	
+	MEM_mux : entity work.nBit_mux2(structural)
+		generic map(dsz)
+		port map(MEM_to_REG, ALU_result, MEM_read_data, REG_write_data);
+end structural;
