@@ -1,7 +1,13 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-USE ieee.std_logic_misc.ALL;
+use ieee.std_logic_misc.all;
 
+-- op_sel	op
+--	000 		AND
+--	001 		OR
+--	010 		add
+--	110 		subtract
+--	111 		set-on-less-than
 
 entity ALU_Simple is
 	generic(
