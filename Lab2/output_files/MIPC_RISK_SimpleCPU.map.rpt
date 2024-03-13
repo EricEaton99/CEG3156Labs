@@ -1,0 +1,500 @@
+Analysis & Synthesis report for MIPC_RISK_SimpleCPU
+Wed Mar 13 14:11:15 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. General Register Statistics
+ 10. Source assignments for LPM_RAM_DQ:DMEM|altram:sram|altsyncram:ram_block|altsyncram_ea91:auto_generated
+ 11. Source assignments for LPM_ROM:IMEM|altrom:srom|altsyncram:rom_block|altsyncram_rnv:auto_generated
+ 12. Parameter Settings for User Entity Instance: LPM_RAM_DQ:DMEM
+ 13. Parameter Settings for User Entity Instance: LPM_ROM:IMEM
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Mar 13 14:11:15 2024      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; MIPC_RISK_SimpleCPU                        ;
+; Top-level Entity Name              ; top_level                                  ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 0                                          ;
+;     Total combinational functions  ; 0                                          ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 114                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 16,384                                     ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                         ;
++----------------------------------------------------------------------------+--------------------+---------------------+
+; Option                                                                     ; Setting            ; Default Value       ;
++----------------------------------------------------------------------------+--------------------+---------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                     ;
+; Top-level entity name                                                      ; top_level          ; MIPC_RISK_SimpleCPU ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX       ;
+; Use smart compilation                                                      ; Off                ; Off                 ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                  ;
+; Enable compact report table                                                ; Off                ; Off                 ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto                ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                 ;
+; Preserve fewer node names                                                  ; On                 ; On                  ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                 ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001        ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993           ;
+; State Machine Processing                                                   ; Auto               ; Auto                ;
+; Safe State Machine                                                         ; Off                ; Off                 ;
+; Extract Verilog State Machines                                             ; On                 ; On                  ;
+; Extract VHDL State Machines                                                ; On                 ; On                  ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                 ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000                ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                 ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                  ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                  ;
+; Parallel Synthesis                                                         ; On                 ; On                  ;
+; DSP Block Balancing                                                        ; Auto               ; Auto                ;
+; NOT Gate Push-Back                                                         ; On                 ; On                  ;
+; Power-Up Don't Care                                                        ; On                 ; On                  ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                 ;
+; Remove Duplicate Registers                                                 ; On                 ; On                  ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                 ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                 ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                 ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                 ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                  ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                 ;
+; Optimization Technique                                                     ; Balanced           ; Balanced            ;
+; Carry Chain Length                                                         ; 70                 ; 70                  ;
+; Auto Carry Chains                                                          ; On                 ; On                  ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                  ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                 ;
+; Auto ROM Replacement                                                       ; On                 ; On                  ;
+; Auto RAM Replacement                                                       ; On                 ; On                  ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                  ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto                ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto                ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                  ;
+; Strict RAM Replacement                                                     ; Off                ; Off                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                  ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                 ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                  ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                 ;
+; Auto Resource Sharing                                                      ; Off                ; Off                 ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                 ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                 ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                 ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                  ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                 ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                  ;
+; Report Parameter Settings                                                  ; On                 ; On                  ;
+; Report Source Assignments                                                  ; On                 ; On                  ;
+; Report Connectivity Checks                                                 ; On                 ; On                  ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                 ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                   ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation  ;
+; HDL message level                                                          ; Level2             ; Level2              ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                 ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000                ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000                ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                 ;
+; Clock MUX Protection                                                       ; On                 ; On                  ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                 ;
+; Block Design Naming                                                        ; Auto               ; Auto                ;
+; SDC constraint protection                                                  ; Off                ; Off                 ;
+; Synthesis Effort                                                           ; Auto               ; Auto                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                  ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium              ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto                ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                  ;
+; Synthesis Seed                                                             ; 1                  ; 1                   ;
++----------------------------------------------------------------------------+--------------------+---------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 20     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+; top_level.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/top_level.bdf          ;         ;
+; lpm_ram_dq.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_ram_dq.tdf                         ;         ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc                             ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                            ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                         ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                         ;         ;
+; altram.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altram.tdf                             ;         ;
+; memmodes.inc                     ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/memmodes.inc                         ;         ;
+; altsyncram.inc                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.inc                         ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                         ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                  ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                          ;         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                             ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                           ;         ;
+; db/altsyncram_ea91.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/db/altsyncram_ea91.tdf ;         ;
+; lpm_rom.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_rom.tdf                            ;         ;
+; altrom.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.tdf                             ;         ;
+; db/altsyncram_rnv.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Users/Wring/Documents/_uOttawa/2024Winter/CEG3156/Labs/Lab2/db/altsyncram_rnv.tdf  ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+;                                             ;               ;
+; Total combinational functions               ; 0             ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 0             ;
+;     -- 3 input functions                    ; 0             ;
+;     -- <=2 input functions                  ; 0             ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 0             ;
+;     -- arithmetic mode                      ; 0             ;
+;                                             ;               ;
+; Total registers                             ; 0             ;
+;     -- Dedicated logic registers            ; 0             ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 114           ;
+; Total memory bits                           ; 16384         ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+; Maximum fan-out node                        ; inclock~input ;
+; Maximum fan-out                             ; 64            ;
+; Total fan-out                               ; 818           ;
+; Average fan-out                             ; 2.80          ;
++---------------------------------------------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                  ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                        ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
+; |top_level                                   ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 114  ; 0            ; |top_level                                                                                 ; work         ;
+;    |lpm_ram_dq:DMEM|                         ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|lpm_ram_dq:DMEM                                                                 ; work         ;
+;       |altram:sram|                          ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|lpm_ram_dq:DMEM|altram:sram                                                     ; work         ;
+;          |altsyncram:ram_block|              ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|lpm_ram_dq:DMEM|altram:sram|altsyncram:ram_block                                ; work         ;
+;             |altsyncram_ea91:auto_generated| ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|lpm_ram_dq:DMEM|altram:sram|altsyncram:ram_block|altsyncram_ea91:auto_generated ; work         ;
+;    |lpm_rom:IMEM|                            ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|lpm_rom:IMEM                                                                    ; work         ;
+;       |altrom:srom|                          ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|lpm_rom:IMEM|altrom:srom                                                        ; work         ;
+;          |altsyncram:rom_block|              ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|lpm_rom:IMEM|altrom:srom|altsyncram:rom_block                                   ; work         ;
+;             |altsyncram_rnv:auto_generated|  ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|lpm_rom:IMEM|altrom:srom|altsyncram:rom_block|altsyncram_rnv:auto_generated     ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                          ;
++--------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                       ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++--------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------+
+; lpm_ram_dq:DMEM|altram:sram|altsyncram:ram_block|altsyncram_ea91:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 256          ; 32           ; --           ; --           ; 8192 ; DMEM ;
+; lpm_rom:IMEM|altrom:srom|altsyncram:rom_block|altsyncram_rnv:auto_generated|ALTSYNCRAM     ; AUTO ; ROM         ; 256          ; 32           ; --           ; --           ; 8192 ; IMEM ;
++--------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Source assignments for LPM_RAM_DQ:DMEM|altram:sram|altsyncram:ram_block|altsyncram_ea91:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                       ;
++---------------------------------+--------------------+------+------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                        ;
++---------------------------------+--------------------+------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Source assignments for LPM_ROM:IMEM|altrom:srom|altsyncram:rom_block|altsyncram_rnv:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------+
+; Assignment                      ; Value              ; From ; To                                   ;
++---------------------------------+--------------------+------+--------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                    ;
++---------------------------------+--------------------+------+--------------------------------------+
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_RAM_DQ:DMEM ;
++------------------------+--------------+----------------------+
+; Parameter Name         ; Value        ; Type                 ;
++------------------------+--------------+----------------------+
+; LPM_WIDTH              ; 32           ; Signed Integer       ;
+; LPM_WIDTHAD            ; 8            ; Signed Integer       ;
+; LPM_NUMWORDS           ; 256          ; Signed Integer       ;
+; LPM_INDATA             ; REGISTERED   ; Untyped              ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED   ; Untyped              ;
+; LPM_OUTDATA            ; UNREGISTERED ; Untyped              ;
+; LPM_FILE               ; DMEM         ; Untyped              ;
+; USE_EAB                ; ON           ; Untyped              ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped              ;
+; CBXI_PARAMETER         ; NOTHING      ; Untyped              ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE       ;
++------------------------+--------------+----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_ROM:IMEM ;
++------------------------+--------------+-------------------+
+; Parameter Name         ; Value        ; Type              ;
++------------------------+--------------+-------------------+
+; LPM_WIDTH              ; 32           ; Signed Integer    ;
+; LPM_WIDTHAD            ; 8            ; Signed Integer    ;
+; LPM_NUMWORDS           ; 256          ; Signed Integer    ;
+; LPM_ADDRESS_CONTROL    ; REGISTERED   ; Untyped           ;
+; LPM_OUTDATA            ; UNREGISTERED ; Untyped           ;
+; LPM_FILE               ; IMEM         ; Untyped           ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped           ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY        ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY      ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE      ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE    ;
++------------------------+--------------+-------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Mar 13 14:11:14 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPC_RISK_SimpleCPU -c MIPC_RISK_SimpleCPU
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file top_level.bdf
+    Info (12023): Found entity 1: top_level
+Info (12021): Found 1 design units, including 0 entities, in source file cpu_types.vhd
+    Info (12022): Found design unit 1: CPU_Types
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_cla4_adder.vhd
+    Info (12022): Found design unit 1: nBit_cla4_adder-structural
+    Info (12023): Found entity 1: nBit_cla4_adder
+Info (12021): Found 2 design units, including 1 entities, in source file cla4_adder.vhd
+    Info (12022): Found design unit 1: cla4_adder-structural
+    Info (12023): Found entity 1: cla4_adder
+Info (12021): Found 2 design units, including 1 entities, in source file half_adder.vhd
+    Info (12022): Found design unit 1: half_adder-structural
+    Info (12023): Found entity 1: half_adder
+Info (12021): Found 2 design units, including 1 entities, in source file tristate_buffer.vhd
+    Info (12022): Found design unit 1: tristate_buffer-structural
+    Info (12023): Found entity 1: tristate_buffer
+Info (12021): Found 2 design units, including 1 entities, in source file registers.vhd
+    Info (12022): Found design unit 1: reg_block_r2w1-structural
+    Info (12023): Found entity 1: reg_block_r2w1
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_mux2.vhd
+    Info (12022): Found design unit 1: nBit_mux2-structural
+    Info (12023): Found entity 1: nBit_mux2
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2powmbits.vhd
+    Info (12022): Found design unit 1: mux_2powMBits-rtl
+    Info (12023): Found entity 1: mux_2powMBits
+Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
+    Info (12022): Found design unit 1: mux2-rtl
+    Info (12023): Found entity 1: mux2
+Info (12021): Found 2 design units, including 1 entities, in source file mipc_risk_simplecpu.vhd
+    Info (12022): Found design unit 1: MIPS_RISK_SingleCycle-structural
+    Info (12023): Found entity 1: MIPS_RISK_SingleCycle
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_inc1.vhd
+    Info (12022): Found design unit 1: nBit_inc1-structural
+    Info (12023): Found entity 1: nBit_inc1
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_reg.vhd
+    Info (12022): Found design unit 1: nBit_reg-structural
+    Info (12023): Found entity 1: nBit_reg
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_reg_en.vhd
+    Info (12022): Found design unit 1: nBit_reg_en-structural
+    Info (12023): Found entity 1: nBit_reg_en
+Info (12021): Found 2 design units, including 1 entities, in source file d_flipflop.vhd
+    Info (12022): Found design unit 1: d_flipflop-structural
+    Info (12023): Found entity 1: d_flipflop
+Info (12021): Found 2 design units, including 1 entities, in source file d_latch.vhd
+    Info (12022): Found design unit 1: d_latch-structural
+    Info (12023): Found entity 1: d_latch
+Info (12021): Found 2 design units, including 1 entities, in source file d_flipflop_en.vhd
+    Info (12022): Found design unit 1: d_flipflop_en-structural
+    Info (12023): Found entity 1: d_flipflop_en
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_decoder.vhd
+    Info (12022): Found design unit 1: nBit_decoder-structural
+    Info (12023): Found entity 1: nBit_decoder
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_tristate_buffer.vhd
+    Info (12022): Found design unit 1: nBit_tristate_buffer-structural
+    Info (12023): Found entity 1: nBit_tristate_buffer
+Warning (12019): Can't analyze file -- file nBit_mux_2powMBits.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file alu_simple.vhd
+    Info (12022): Found design unit 1: ALU_Simple-structural
+    Info (12023): Found entity 1: ALU_Simple
+Info (12021): Found 2 design units, including 1 entities, in source file au_simple.vhd
+    Info (12022): Found design unit 1: AU_Simple-structural
+    Info (12023): Found entity 1: AU_Simple
+Info (12021): Found 2 design units, including 1 entities, in source file lu_simple.vhd
+    Info (12022): Found design unit 1: LU_Simple-structural
+    Info (12023): Found entity 1: LU_Simple
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_adder_subtraction_block.vhd
+    Info (12022): Found design unit 1: nBit_adder_subtraction_block-structural
+    Info (12023): Found entity 1: nBit_adder_subtraction_block
+Info (12021): Found 2 design units, including 1 entities, in source file mips_risk_singlecycle_instruction_breakdown.vhd
+    Info (12022): Found design unit 1: MIPS_RISK_SingleCycle_instruction_breakdown-rtl
+    Info (12023): Found entity 1: MIPS_RISK_SingleCycle_instruction_breakdown
+Info (12021): Found 2 design units, including 1 entities, in source file dmem_wizard.vhd
+    Info (12022): Found design unit 1: dmem_wizard-SYN
+    Info (12023): Found entity 1: DMEM_wizard
+Info (12127): Elaborating entity "top_level" for the top level hierarchy
+Warning (275004): Undeclared parameter DMEM
+Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming DMEM was intended to be a quoted string
+Warning (275004): Undeclared parameter IMEM
+Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming IMEM was intended to be a quoted string
+Info (12128): Elaborating entity "LPM_RAM_DQ" for hierarchy "LPM_RAM_DQ:DMEM"
+Info (12130): Elaborated megafunction instantiation "LPM_RAM_DQ:DMEM"
+Info (12133): Instantiated megafunction "LPM_RAM_DQ:DMEM" with the following parameter:
+    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info (12134): Parameter "LPM_FILE" = "DMEM"
+    Info (12134): Parameter "LPM_INDATA" = "REGISTERED"
+    Info (12134): Parameter "LPM_NUMWORDS" = "256"
+    Info (12134): Parameter "LPM_OUTDATA" = "UNREGISTERED"
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+    Info (12134): Parameter "LPM_WIDTHAD" = "8"
+Info (12128): Elaborating entity "altram" for hierarchy "LPM_RAM_DQ:DMEM|altram:sram"
+Warning (287001): Assertion warning: altram does not support Cyclone IV E device family -- attempting best-case memory conversions, but power-up states and read during write behavior will be different for Cyclone IV E devices
+Info (12131): Elaborated megafunction instantiation "LPM_RAM_DQ:DMEM|altram:sram", which is child of megafunction instantiation "LPM_RAM_DQ:DMEM"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_RAM_DQ:DMEM|altram:sram|altsyncram:ram_block"
+Info (12131): Elaborated megafunction instantiation "LPM_RAM_DQ:DMEM|altram:sram|altsyncram:ram_block", which is child of megafunction instantiation "LPM_RAM_DQ:DMEM"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ea91.tdf
+    Info (12023): Found entity 1: altsyncram_ea91
+Info (12128): Elaborating entity "altsyncram_ea91" for hierarchy "LPM_RAM_DQ:DMEM|altram:sram|altsyncram:ram_block|altsyncram_ea91:auto_generated"
+Info (12128): Elaborating entity "LPM_ROM" for hierarchy "LPM_ROM:IMEM"
+Info (12130): Elaborated megafunction instantiation "LPM_ROM:IMEM"
+Info (12133): Instantiated megafunction "LPM_ROM:IMEM" with the following parameter:
+    Info (12134): Parameter "LPM_ADDRESS_CONTROL" = "REGISTERED"
+    Info (12134): Parameter "LPM_FILE" = "IMEM"
+    Info (12134): Parameter "LPM_NUMWORDS" = "256"
+    Info (12134): Parameter "LPM_OUTDATA" = "UNREGISTERED"
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+    Info (12134): Parameter "LPM_WIDTHAD" = "8"
+Info (12128): Elaborating entity "altrom" for hierarchy "LPM_ROM:IMEM|altrom:srom"
+Info (12131): Elaborated megafunction instantiation "LPM_ROM:IMEM|altrom:srom", which is child of megafunction instantiation "LPM_ROM:IMEM"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "LPM_ROM:IMEM|altrom:srom|altsyncram:rom_block"
+Info (12131): Elaborated megafunction instantiation "LPM_ROM:IMEM|altrom:srom|altsyncram:rom_block", which is child of megafunction instantiation "LPM_ROM:IMEM"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rnv.tdf
+    Info (12023): Found entity 1: altsyncram_rnv
+Info (12128): Elaborating entity "altsyncram_rnv" for hierarchy "LPM_ROM:IMEM|altrom:srom|altsyncram:rom_block|altsyncram_rnv:auto_generated"
+Warning (13044): Always-enabled tri-state buffer(s) removed
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[31]" to the node "IMEM_data[31]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[30]" to the node "IMEM_data[30]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[29]" to the node "IMEM_data[29]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[28]" to the node "IMEM_data[28]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[27]" to the node "IMEM_data[27]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[26]" to the node "IMEM_data[26]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[25]" to the node "IMEM_data[25]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[24]" to the node "IMEM_data[24]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[23]" to the node "IMEM_data[23]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[22]" to the node "IMEM_data[22]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[21]" to the node "IMEM_data[21]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[20]" to the node "IMEM_data[20]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[19]" to the node "IMEM_data[19]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[18]" to the node "IMEM_data[18]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[17]" to the node "IMEM_data[17]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[16]" to the node "IMEM_data[16]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[15]" to the node "IMEM_data[15]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[14]" to the node "IMEM_data[14]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[13]" to the node "IMEM_data[13]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[12]" to the node "IMEM_data[12]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[11]" to the node "IMEM_data[11]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[10]" to the node "IMEM_data[10]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[9]" to the node "IMEM_data[9]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[8]" to the node "IMEM_data[8]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[7]" to the node "IMEM_data[7]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[6]" to the node "IMEM_data[6]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[5]" to the node "IMEM_data[5]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[4]" to the node "IMEM_data[4]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[3]" to the node "IMEM_data[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[2]" to the node "IMEM_data[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[1]" to the node "IMEM_data[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "lpm_rom:IMEM|otri[0]" to the node "IMEM_data[0]" into a wire
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 178 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 50 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21064): Implemented 64 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4688 megabytes
+    Info: Processing ended: Wed Mar 13 14:11:15 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

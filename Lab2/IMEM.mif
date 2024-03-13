@@ -21,7 +21,7 @@ ADDRESS_RADIX=UNS;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	0    :   FFFFFFFF;
+	0    :   00000000;
 	1    :   EEEEEEEE;
 	2    :   DDDDDDDD;
 	3    :   CCCCCCCC;
@@ -36,5 +36,5 @@ CONTENT BEGIN
 	12   :   33333333;
 	13   :   22222222;
 	14   :   11111111;
-	[15..255]  :   00;
+	[15..255]  :   00000000;
 END;
