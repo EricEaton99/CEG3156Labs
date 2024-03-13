@@ -21,57 +21,89 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 656 360 872 376)
-	(text "INPUT" (rect 173 0 232 18)(font "Arial" (font_size 6)))
-	(text "op_sel[2..0]" (rect 5 0 123 22)(font "Arial" ))
-	(pt 216 8)
+	(rect 312 408 488 424)
+	(text "INPUT" (rect 133 0 192 18)(font "Arial" (font_size 6)))
+	(text "inclock" (rect 5 0 73 22)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 132 12)(pt 157 12))
-		(line (pt 132 4)(pt 157 4))
-		(line (pt 161 8)(pt 216 8))
-		(line (pt 132 12)(pt 132 4))
-		(line (pt 157 4)(pt 161 8))
-		(line (pt 157 12)(pt 161 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 176 7 220 25)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 180 25)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect 688 328 872 344)
-	(text "INPUT" (rect 141 0 200 18)(font "Arial" (font_size 6)))
-	(text "A[31..0]" (rect 5 0 85 22)(font "Arial" ))
-	(pt 184 8)
+	(rect 400 272 624 288)
+	(text "INPUT" (rect 181 0 240 18)(font "Arial" (font_size 6)))
+	(text "WriteEnable" (rect 5 0 130 22)(font "Arial" ))
+	(pt 224 8)
 	(drawing
-		(line (pt 100 12)(pt 125 12))
-		(line (pt 100 4)(pt 125 4))
-		(line (pt 129 8)(pt 184 8))
-		(line (pt 100 12)(pt 100 4))
-		(line (pt 125 4)(pt 129 8))
-		(line (pt 125 12)(pt 129 8))
+		(line (pt 140 12)(pt 165 12))
+		(line (pt 140 4)(pt 165 4))
+		(line (pt 169 8)(pt 224 8))
+		(line (pt 140 12)(pt 140 4))
+		(line (pt 165 4)(pt 169 8))
+		(line (pt 165 12)(pt 169 8))
 	)
-	(text "VCC" (rect 144 7 188 25)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 184 7 228 25)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect 688 344 872 360)
-	(text "INPUT" (rect 141 0 200 18)(font "Arial" (font_size 6)))
-	(text "B[31..0]" (rect 5 0 85 22)(font "Arial" ))
-	(pt 184 8)
+	(rect 456 208 664 224)
+	(text "INPUT" (rect 165 0 224 18)(font "Arial" (font_size 6)))
+	(text "data[31..0]" (rect 5 0 111 22)(font "Arial" ))
+	(pt 208 8)
 	(drawing
-		(line (pt 100 12)(pt 125 12))
-		(line (pt 100 4)(pt 125 4))
-		(line (pt 129 8)(pt 184 8))
-		(line (pt 100 12)(pt 100 4))
-		(line (pt 125 4)(pt 129 8))
-		(line (pt 125 12)(pt 129 8))
+		(line (pt 124 12)(pt 149 12))
+		(line (pt 124 4)(pt 149 4))
+		(line (pt 153 8)(pt 208 8))
+		(line (pt 124 12)(pt 124 4))
+		(line (pt 149 4)(pt 153 8))
+		(line (pt 149 12)(pt 153 8))
 	)
-	(text "VCC" (rect 144 7 188 25)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 168 7 212 25)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 352 224 664 240)
+	(text "INPUT" (rect 269 0 328 18)(font "Arial" (font_size 6)))
+	(text "DMEM_address[7..0]" (rect 5 0 221 22)(font "Arial" ))
+	(pt 312 8)
+	(drawing
+		(line (pt 228 12)(pt 253 12))
+		(line (pt 228 4)(pt 253 4))
+		(line (pt 257 8)(pt 312 8))
+		(line (pt 228 12)(pt 228 4))
+		(line (pt 253 4)(pt 257 8))
+		(line (pt 253 12)(pt 257 8))
+	)
+	(text "VCC" (rect 272 7 316 25)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 808 392 1112 408)
+	(text "INPUT" (rect 261 0 320 18)(font "Arial" (font_size 6)))
+	(text "IMEM_address[7..0]" (rect 5 0 211 22)(font "Arial" ))
+	(pt 304 8)
+	(drawing
+		(line (pt 220 12)(pt 245 12))
+		(line (pt 220 4)(pt 245 4))
+		(line (pt 249 8)(pt 304 8))
+		(line (pt 220 12)(pt 220 4))
+		(line (pt 245 4)(pt 249 8))
+		(line (pt 245 12)(pt 249 8))
+	)
+	(text "VCC" (rect 264 7 308 25)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
-	(rect 1072 344 1248 360)
+	(rect 1224 416 1500 432)
 	(text "OUTPUT" (rect 1 0 82 18)(font "Arial" (font_size 6)))
-	(text "zero" (rect 90 0 133 22)(font "Arial" ))
+	(text "IMEM_data[31..0]" (rect 90 0 270 22)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -85,41 +117,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1072 360 1248 376)
+	(rect 784 240 1069 256)
 	(text "OUTPUT" (rect 1 0 82 18)(font "Arial" (font_size 6)))
-	(text "c_out" (rect 90 0 145 22)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 1072 376 1252 392)
-	(text "OUTPUT" (rect 1 0 82 18)(font "Arial" (font_size 6)))
-	(text "overflow" (rect 90 0 174 22)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 1072 328 1284 344)
-	(text "OUTPUT" (rect 1 0 82 18)(font "Arial" (font_size 6)))
-	(text "result[31..0]" (rect 90 0 206 22)(font "Arial" ))
+	(text "DMEM_data[31..0]" (rect 90 0 279 22)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -132,65 +132,217 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 872 304 1072 416)
-	(text "ALU_Simple" (rect 5 0 135 22)(font "Arial" ))
-	(text "inst" (rect 8 96 42 118)(font "Arial" ))
+	(rect 1040 432 1072 448)
+	(text "VCC" (rect 7 0 51 18)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 5 37 27)(font "Arial" )(invisible))
 	(port
-		(pt 0 32)
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 31 29)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 31 29)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 1112 376 1224 472)
+	(text "LPM_ROM" (rect 25 0 190 32)(font "Arial" (font_size 10)))
+	(text "IMEM" (rect 3 85 71 109)(font "Arial" (font_size 8)))
+	(port
+		(pt 0 24)
 		(input)
-		(text "A[dsz-1..0]" (rect 0 0 108 22)(font "Arial" ))
-		(text "A[dsz-1..0]" (rect 21 27 129 49)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "address[LPM_WIDTHAD-1..0]" (rect 20 17 363 41)(font "Arial" (font_size 8)))
+		(text "address[]" (rect 20 17 122 41)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24)(line_width 3))
 	)
 	(port
-		(pt 0 48)
+		(pt 0 40)
 		(input)
-		(text "B[dsz-1..0]" (rect 0 0 108 22)(font "Arial" ))
-		(text "B[dsz-1..0]" (rect 21 43 129 65)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "inclock" (rect 20 33 95 57)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 20 33 95 57)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
 	)
 	(port
-		(pt 0 64)
+		(pt 0 56)
 		(input)
-		(text "op_sel[2..0]" (rect 0 0 118 22)(font "Arial" ))
-		(text "op_sel[2..0]" (rect 21 59 139 81)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
+		(text "outclock" (rect 20 49 110 73)(font "Arial" (font_size 8)))
+		(text "outclock" (rect 20 49 110 73)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
 	)
 	(port
-		(pt 200 32)
-		(output)
-		(text "result[dsz-1..0]" (rect 0 0 146 22)(font "Arial" ))
-		(text "result[dsz-1..0]" (rect 56 27 202 49)(font "Arial" ))
-		(line (pt 200 32)(pt 184 32)(line_width 3))
+		(pt 0 72)
+		(input)
+		(text "memenab" (rect 20 65 126 89)(font "Arial" (font_size 8)))
+		(text "memenab" (rect 20 65 126 89)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72))
 	)
 	(port
-		(pt 200 48)
+		(pt 112 48)
 		(output)
-		(text "zero" (rect 0 0 43 22)(font "Arial" ))
-		(text "zero" (rect 143 43 186 65)(font "Arial" ))
-		(line (pt 200 48)(pt 184 48))
-	)
-	(port
-		(pt 200 64)
-		(output)
-		(text "c_out" (rect 0 0 55 22)(font "Arial" ))
-		(text "c_out" (rect 133 59 188 81)(font "Arial" ))
-		(line (pt 200 64)(pt 184 64))
-	)
-	(port
-		(pt 200 80)
-		(output)
-		(text "overflow" (rect 0 0 84 22)(font "Arial" ))
-		(text "overflow" (rect 108 75 192 97)(font "Arial" ))
-		(line (pt 200 80)(pt 184 80))
+		(text "q[LPM_WIDTH-1..0]" (rect 80 41 312 65)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 80 41 107 65)(font "Arial" (font_size 8)))
+		(line (pt 96 48)(pt 112 48)(line_width 3))
 	)
 	(parameter
-		"dsz"
+		"LPM_ADDRESS_CONTROL"
+		"\"REGISTERED\""
+		"Should the address and control ports be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_UNKNOWN")	)
+	(parameter
+		"LPM_FILE"
+		"IMEM"
+		"File containing initial contents of memory array"
+		(type "PARAMETER_UNKNOWN")	)
+	(parameter
+		"LPM_NUMWORDS"
+		"256"
+		"Number of memory words, default is 2^LPM_WIDTHAD"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"LPM_OUTDATA"
+		"\"UNREGISTERED\""
+		"Should the output data be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_UNKNOWN")	)
+	(parameter
+		"LPM_WIDTH"
 		"32"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		"Data width in bits, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"LPM_WIDTHAD"
+		"8"
+		"Number of address lines, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
+		(type "PARAMETER_UNSIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 184 96))
+		(line (pt 16 16)(pt 96 16))
+		(line (pt 16 80)(pt 96 80))
+		(line (pt 96 80)(pt 96 16))
+		(line (pt 16 80)(pt 16 16))
 	)
-	(annotation_block (parameter)(rect 1072 264 1320 304))
+	(annotation_block (parameter)(rect 1224 240 1756 373))
 )
+(symbol
+	(rect 664 192 784 304)
+	(text "LPM_RAM_DQ" (rect 16 0 246 32)(font "Arial" (font_size 10)))
+	(text "DMEM" (rect 3 101 82 125)(font "Arial" (font_size 8)))
+	(port
+		(pt 0 56)
+		(input)
+		(text "inclock" (rect 20 49 95 73)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 20 49 95 73)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "data[LPM_WIDTH-1..0]" (rect 20 17 287 41)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 20 17 82 41)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24)(line_width 3))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "address[LPM_WIDTHAD-1..0]" (rect 20 33 363 57)(font "Arial" (font_size 8)))
+		(text "address[]" (rect 20 33 122 57)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "we" (rect 20 81 51 105)(font "Arial" (font_size 8)))
+		(text "we" (rect 20 81 51 105)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "outclock" (rect 20 65 110 89)(font "Arial" (font_size 8)))
+		(text "outclock" (rect 20 65 110 89)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 120 56)
+		(output)
+		(text "q[LPM_WIDTH-1..0]" (rect 88 49 320 73)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 88 49 115 73)(font "Arial" (font_size 8)))
+		(line (pt 104 56)(pt 120 56)(line_width 3))
+	)
+	(parameter
+		"LPM_ADDRESS_CONTROL"
+		"\"REGISTERED\""
+		"Should the address and control ports be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_UNKNOWN")	)
+	(parameter
+		"LPM_FILE"
+		"DMEM"
+		"File containing initial contents of memory array"
+		(type "PARAMETER_UNKNOWN")	)
+	(parameter
+		"LPM_INDATA"
+		"\"REGISTERED\""
+		"Should the write data be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_UNKNOWN")	)
+	(parameter
+		"LPM_NUMWORDS"
+		"256"
+		"Number of memory words, default is 2^LPM_WIDTHAD"
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"LPM_OUTDATA"
+		"\"UNREGISTERED\""
+		"Should the output data be registered?"
+		"\"REGISTERED\"" "\"UNREGISTERED\"" 
+		(type "PARAMETER_UNKNOWN")	)
+	(parameter
+		"LPM_WIDTH"
+		"32"
+		"Data width in bits, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(parameter
+		"LPM_WIDTHAD"
+		"8"
+		"Number of address lines, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" 
+		(type "PARAMETER_UNSIGNED_DEC")	)
+	(drawing
+		(line (pt 16 16)(pt 104 16))
+		(line (pt 16 96)(pt 104 96))
+		(line (pt 104 96)(pt 104 16))
+		(line (pt 16 96)(pt 16 16))
+	)
+	(annotation_block (parameter)(rect 784 40 1316 192))
+)
+(connector
+	(pt 1112 448)
+	(pt 1056 448)
+)
+(connector
+	(pt 664 248)
+	(pt 600 248)
+)
+(connector
+	(pt 600 248)
+	(pt 600 416)
+)
+(connector
+	(pt 488 416)
+	(pt 600 416)
+)
+(connector
+	(pt 600 416)
+	(pt 1112 416)
+)
+(connector
+	(pt 664 280)
+	(pt 624 280)
+)
+(junction (pt 600 416))
