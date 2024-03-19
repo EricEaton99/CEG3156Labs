@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "03/13/2024 14:13:35"
+// DATE "03/19/2024 13:44:09"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -287,8 +287,8 @@ wire \IMEM_address[4]~input_o ;
 wire \IMEM_address[5]~input_o ;
 wire \IMEM_address[6]~input_o ;
 wire \IMEM_address[7]~input_o ;
-wire [31:0] \DMEM|sram|ram_block|auto_generated|q_a ;
 wire [31:0] \IMEM|srom|rom_block|auto_generated|q_a ;
+wire [31:0] \DMEM|sram|ram_block|auto_generated|q_a ;
 
 wire [17:0] \DMEM|sram|ram_block|auto_generated|ram_block1a18_PORTADATAOUT_bus ;
 wire [17:0] \DMEM|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus ;

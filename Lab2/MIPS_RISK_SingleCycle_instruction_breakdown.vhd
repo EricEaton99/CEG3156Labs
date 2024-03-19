@@ -9,7 +9,8 @@ port(
 	rs, rt, rd : out std_logic_vector(6 downto 0);
 	shamt : out std_logic_vector(10 downto 6);
 	funct : out std_logic_vector(5 downto 0);
-	address : out std_logic_vector(15 downto 0));
+	address_b : out std_logic_vector(15 downto 0);
+	address_j : out std_logic_vector(25 downto 0));
 end MIPS_RISK_SingleCycle_instruction_breakdown;
 
 architecture rtl of MIPS_RISK_SingleCycle_instruction_breakdown is
@@ -27,5 +28,6 @@ begin
 	rd <= instruction(15 downto 11);
 	shamt <= instruction(10 downto 6);
 	funct <= instruction(5 downto 0);
-	address <= instruction(15 downto 0);
+	address_b <= instruction(15 downto 0);
+	address_j <= instruction(25 downto 0);
 end rtl;

@@ -86,4 +86,10 @@ set_global_assignment -name VHDL_FILE MIPS_RISK_SingleCycle_instruction_breakdow
 set_global_assignment -name MIF_FILE IMEM.mif
 set_global_assignment -name MIF_FILE DMEM.mif
 set_global_assignment -name QIP_FILE DMEM_wizard.qip
+set_global_assignment -name VHDL_FILE MIPS_RISK_SingleCycle_VARS.vhd
+set_global_assignment -name VHDL_FILE PC_reg.vhd
+set_global_assignment -name VHDL_FILE PC_inc.vhd
+set_global_assignment -name VHDL_FILE ID_CTRL_REG.vhd
+set_global_assignment -name VHDL_FILE EX_ALU_Branch.vhd
+set_global_assignment -name VHDL_FILE MEM_Branch.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
