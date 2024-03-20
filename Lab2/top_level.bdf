@@ -52,7 +52,7 @@ applicable agreement for further details.
 	(text "VCC" (rect 184 7 228 25)(font "Arial" (font_size 6)))
 )
 (symbol
-	(rect 2392 512 2512 624)
+	(rect 2472 528 2592 640)
 	(text "LPM_RAM_DQ" (rect 16 0 246 32)(font "Arial" (font_size 10)))
 	(text "DMEM" (rect 3 101 82 125)(font "Arial" (font_size 8)))
 	(port
@@ -143,10 +143,10 @@ applicable agreement for further details.
 		(line (pt 104 96)(pt 104 16))
 		(line (pt 16 96)(pt 16 16))
 	)
-	(annotation_block (parameter)(rect 2512 488 2536 512))
+	(annotation_block (parameter)(rect 2592 504 2616 528))
 )
 (symbol
-	(rect 768 512 880 608)
+	(rect 744 544 856 640)
 	(text "LPM_ROM" (rect 25 0 190 32)(font "Arial" (font_size 10)))
 	(text "IMEM" (rect 3 85 71 109)(font "Arial" (font_size 8)))
 	(port
@@ -224,10 +224,10 @@ applicable agreement for further details.
 		(line (pt 96 80)(pt 96 16))
 		(line (pt 16 80)(pt 16 16))
 	)
-	(annotation_block (parameter)(rect 880 480 912 512))
+	(annotation_block (parameter)(rect 856 512 888 544))
 )
 (symbol
-	(rect 728 320 928 432)
+	(rect 704 352 904 464)
 	(text "IF_PC_inc" (rect 5 0 117 22)(font "Arial" ))
 	(text "inst" (rect 8 96 42 118)(font "Arial" ))
 	(port
@@ -299,7 +299,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 680 576 712 592)
+	(rect 656 608 688 624)
 	(text "VCC" (rect 7 0 51 18)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 5 41 23)(font "Arial" (font_size 6))(invisible))
 	(port
@@ -476,7 +476,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1800 384 2072 560)
+	(rect 1840 336 2112 512)
 	(text "EX_ALU" (rect 5 0 98 22)(font "Arial" ))
 	(text "inst5" (rect 8 160 55 182)(font "Arial" ))
 	(port
@@ -532,28 +532,28 @@ applicable agreement for further details.
 		(pt 272 32)
 		(output)
 		(text "ALU_result[31..0]" (rect 0 0 177 22)(font "Arial" ))
-		(text "ALU_result[31..0]" (rect 102 27 251 49)(font "Arial" ))
+		(text "ALU_result[31..0]" (rect 102 27 279 49)(font "Arial" ))
 		(line (pt 272 32)(pt 256 32)(line_width 3))
 	)
 	(port
 		(pt 272 48)
 		(output)
 		(text "ALU_zero" (rect 0 0 103 22)(font "Arial" ))
-		(text "ALU_zero" (rect 164 43 251 65)(font "Arial" ))
+		(text "ALU_zero" (rect 164 43 267 65)(font "Arial" ))
 		(line (pt 272 48)(pt 256 48))
 	)
 	(port
 		(pt 272 64)
 		(output)
 		(text "ALU_c_out" (rect 0 0 115 22)(font "Arial" ))
-		(text "ALU_c_out" (rect 154 59 251 81)(font "Arial" ))
+		(text "ALU_c_out" (rect 154 59 269 81)(font "Arial" ))
 		(line (pt 272 64)(pt 256 64))
 	)
 	(port
 		(pt 272 80)
 		(output)
 		(text "ALU_overflow" (rect 0 0 145 22)(font "Arial" ))
-		(text "ALU_overflow" (rect 129 75 251 97)(font "Arial" ))
+		(text "ALU_overflow" (rect 129 75 274 97)(font "Arial" ))
 		(line (pt 272 80)(pt 256 80))
 	)
 	(drawing
@@ -561,7 +561,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2344 296 2608 440)
+	(rect 2424 312 2688 456)
 	(text "MEM_Branch" (rect 5 0 143 22)(font "Arial" ))
 	(text "inst7" (rect 8 128 46 146)(font "Arial" (font_size 6)))
 	(port
@@ -618,7 +618,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2944 464 3128 576)
+	(rect 3088 464 3272 576)
 	(text "nBit_mux2" (rect 5 0 111 22)(font "Arial" ))
 	(text "inst8" (rect 8 96 46 114)(font "Arial" (font_size 6)))
 	(port
@@ -651,29 +651,18 @@ applicable agreement for further details.
 	)
 	(parameter
 		"n"
-		"4"
+		"32"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
 		(rectangle (rect 16 16 168 96))
 	)
-	(annotation_block (parameter)(rect 3128 424 3376 464))
-)
-(connector
-	(text "REG_write_outp" (rect 1504 352 1643 370)(font "Arial" (font_size 6)))
-	(pt 1576 368)
-	(pt 1504 368)
+	(annotation_block (parameter)(rect 3272 424 3520 462))
 )
 (connector
 	(text "ALU_src" (rect 1514 368 1589 386)(font "Arial" (font_size 6)))
 	(pt 1504 384)
 	(pt 1576 384)
-)
-(connector
-	(text "PC_b_offset" (rect 1504 576 1610 594)(font "Arial" (font_size 6)))
-	(pt 1504 592)
-	(pt 1576 592)
-	(bus)
 )
 (connector
 	(text "branch" (rect 1514 448 1569 466)(font "Arial" (font_size 6)))
@@ -686,45 +675,9 @@ applicable agreement for further details.
 	(pt 1576 448)
 )
 (connector
-	(text "REG_write_adr_outp" (rect 1504 464 1681 482)(font "Arial" (font_size 6)))
-	(pt 1504 480)
-	(pt 1576 480)
-	(bus)
-)
-(connector
-	(text "ALU_shamt" (rect 1504 496 1604 514)(font "Arial" (font_size 6)))
-	(pt 1504 512)
-	(pt 1576 512)
-	(bus)
-)
-(connector
-	(text "ALU_funct" (rect 1514 512 1602 530)(font "Arial" (font_size 6)))
-	(pt 1504 528)
-	(pt 1576 528)
-	(bus)
-)
-(connector
 	(text "MEM_to_REG" (rect 1504 416 1631 434)(font "Arial" (font_size 6)))
 	(pt 1504 432)
 	(pt 1576 432)
-)
-(connector
-	(text "PC_jump" (rect 1514 560 1593 578)(font "Arial" (font_size 6)))
-	(pt 1504 576)
-	(pt 1576 576)
-	(bus)
-)
-(connector
-	(text "ALU_op" (rect 1514 480 1585 498)(font "Arial" (font_size 6)))
-	(pt 1504 496)
-	(pt 1576 496)
-	(bus)
-)
-(connector
-	(text "rd1" (rect 1514 528 1541 546)(font "Arial" (font_size 6)))
-	(pt 1504 544)
-	(pt 1576 544)
-	(bus)
 )
 (connector
 	(text "MEM_read" (rect 1504 400 1599 418)(font "Arial" (font_size 6)))
@@ -737,12 +690,6 @@ applicable agreement for further details.
 	(pt 1576 400)
 )
 (connector
-	(text "PC_next" (rect 2618 312 2691 330)(font "Arial" (font_size 6)))
-	(pt 2608 328)
-	(pt 2672 328)
-	(bus)
-)
-(connector
 	(text "clk" (rect 202 120 224 138)(font "Arial" (font_size 6)))
 	(pt 192 136)
 	(pt 256 136)
@@ -751,39 +698,6 @@ applicable agreement for further details.
 	(text "grst" (rect 202 136 232 154)(font "Arial" (font_size 6)))
 	(pt 192 152)
 	(pt 256 152)
-)
-(connector
-	(text "PC_inc" (rect 2274 312 2337 330)(font "Arial" (font_size 6)))
-	(pt 2344 328)
-	(pt 2264 328)
-	(bus)
-)
-(connector
-	(text "PC_jump" (rect 2258 328 2337 346)(font "Arial" (font_size 6)))
-	(pt 2344 344)
-	(pt 2248 344)
-	(bus)
-)
-(connector
-	(text "PC_b_offset" (rect 2248 344 2354 362)(font "Arial" (font_size 6)))
-	(pt 2344 360)
-	(pt 2248 360)
-	(bus)
-)
-(connector
-	(text "jump" (rect 2258 360 2296 378)(font "Arial" (font_size 6)))
-	(pt 2344 376)
-	(pt 2248 376)
-)
-(connector
-	(text "branch" (rect 2258 376 2313 394)(font "Arial" (font_size 6)))
-	(pt 2344 392)
-	(pt 2248 392)
-)
-(connector
-	(text "ALU_zero" (rect 2242 392 2328 410)(font "Arial" (font_size 6)))
-	(pt 2344 408)
-	(pt 2232 408)
 )
 (connector
 	(text "clk" (rect 1082 352 1104 370)(font "Arial" (font_size 6)))
@@ -796,23 +710,6 @@ applicable agreement for further details.
 	(pt 1072 384)
 )
 (connector
-	(text "PC_inc" (rect 1090 384 1153 402)(font "Arial" (font_size 6)))
-	(pt 1184 400)
-	(pt 1080 400)
-	(bus)
-)
-(connector
-	(text "REG_write_outp" (rect 1064 416 1203 434)(font "Arial" (font_size 6)))
-	(pt 1184 432)
-	(pt 1064 432)
-)
-(connector
-	(text "REG_write_adr_outp" (rect 1064 432 1241 450)(font "Arial" (font_size 6)))
-	(pt 1184 448)
-	(pt 1064 448)
-	(bus)
-)
-(connector
 	(text "clk" (rect 234 440 256 458)(font "Arial" (font_size 6)))
 	(pt 224 456)
 	(pt 288 456)
@@ -823,192 +720,320 @@ applicable agreement for further details.
 	(pt 288 472)
 )
 (connector
-	(text "PC_next" (rect 234 472 307 490)(font "Arial" (font_size 6)))
-	(pt 224 488)
-	(pt 288 488)
-	(bus)
-)
-(connector
-	(text "clk" (rect 674 336 696 354)(font "Arial" (font_size 6)))
-	(pt 664 352)
-	(pt 728 352)
-)
-(connector
-	(text "grst" (rect 674 352 704 370)(font "Arial" (font_size 6)))
-	(pt 664 368)
-	(pt 728 368)
-)
-(connector
-	(text "PC_inc" (rect 938 336 1001 354)(font "Arial" (font_size 6)))
-	(pt 928 352)
-	(pt 984 352)
-	(bus)
-)
-(connector
-	(text "MEM_read_data" (rect 2802 512 2944 530)(font "Arial" (font_size 6)))
-	(pt 2944 528)
-	(pt 2792 528)
-	(bus)
-)
-(connector
-	(text "AUL_res" (rect 2866 496 2942 514)(font "Arial" (font_size 6)))
-	(pt 2944 512)
-	(pt 2856 512)
-	(bus)
-)
-(connector
-	(text "MEM_to_REG" (rect 2832 480 2959 498)(font "Arial" (font_size 6)))
-	(pt 2944 496)
-	(pt 2832 496)
-)
-(connector
-	(text "write_data" (rect 3138 480 3224 498)(font "Arial" (font_size 6)))
-	(pt 3224 496)
-	(pt 3128 496)
-	(bus)
-)
-(connector
-	(text "write_data" (rect 1098 448 1184 466)(font "Arial" (font_size 6)))
-	(pt 1184 464)
-	(pt 1088 464)
-	(bus)
-)
-(connector
-	(text "instruction" (rect 1074 400 1156 418)(font "Arial" (font_size 6)))
-	(pt 1184 416)
-	(pt 1064 416)
-	(bus)
-)
-(connector
-	(text "ALU_overflow" (rect 2072 448 2190 466)(font "Arial" (font_size 6)))
-	(pt 2072 464)
-	(pt 2160 464)
-)
-(connector
-	(text "ALU_c_out" (rect 2082 432 2177 450)(font "Arial" (font_size 6)))
-	(pt 2072 448)
-	(pt 2160 448)
-)
-(connector
-	(text "ALU_zero" (rect 2082 416 2168 434)(font "Arial" (font_size 6)))
-	(pt 2072 432)
-	(pt 2160 432)
-)
-(connector
-	(text "PC_b_offset" (rect 1704 400 1810 418)(font "Arial" (font_size 6)))
-	(pt 1800 416)
-	(pt 1704 416)
-	(bus)
-)
-(connector
-	(text "rd1" (rect 1714 416 1741 434)(font "Arial" (font_size 6)))
-	(pt 1800 432)
-	(pt 1704 432)
-	(bus)
-)
-(connector
-	(text "ALU_src" (rect 1714 448 1789 466)(font "Arial" (font_size 6)))
-	(pt 1800 464)
-	(pt 1704 464)
-)
-(connector
-	(text "ALU_op" (rect 1714 464 1785 482)(font "Arial" (font_size 6)))
-	(pt 1800 480)
-	(pt 1704 480)
-	(bus)
-)
-(connector
-	(text "ALU_shamt" (rect 1704 480 1804 498)(font "Arial" (font_size 6)))
-	(pt 1800 496)
-	(pt 1704 496)
-	(bus)
-)
-(connector
-	(text "ALU_funct" (rect 1714 496 1802 514)(font "Arial" (font_size 6)))
-	(pt 1800 512)
-	(pt 1704 512)
-	(bus)
-)
-(connector
-	(text "AUL_res" (rect 2082 400 2158 418)(font "Arial" (font_size 6)))
-	(pt 2072 416)
-	(pt 2160 416)
-	(bus)
-)
-(connector
-	(text "clk" (rect 714 536 736 554)(font "Arial" (font_size 6)))
-	(pt 704 552)
-	(pt 768 552)
-)
-(connector
-	(pt 696 592)
-	(pt 696 584)
-)
-(connector
-	(pt 696 584)
-	(pt 768 584)
-)
-(connector
-	(text "instruction" (rect 890 544 972 562)(font "Arial" (font_size 6)))
-	(pt 880 560)
-	(pt 952 560)
-	(bus)
-)
-(connector
-	(text "PC[7..0]" (rect 714 520 783 538)(font "Arial" (font_size 6)))
-	(pt 768 536)
-	(pt 704 536)
-	(bus)
-)
-(connector
-	(text "rd2" (rect 1714 432 1741 450)(font "Arial" (font_size 6)))
-	(pt 1800 448)
-	(pt 1704 448)
-	(bus)
-)
-(connector
-	(text "rd2" (rect 1514 544 1541 562)(font "Arial" (font_size 6)))
+	(text "rd2[31..0]" (rect 1514 544 1591 562)(font "Arial" (font_size 6)))
 	(pt 1504 560)
 	(pt 1576 560)
 	(bus)
 )
 (connector
-	(text "clk" (rect 2338 552 2360 570)(font "Arial" (font_size 6)))
-	(pt 2328 568)
-	(pt 2392 568)
-)
-(connector
-	(text "MEM_write" (rect 2304 584 2400 602)(font "Arial" (font_size 6)))
-	(pt 2392 600)
-	(pt 2304 600)
-)
-(connector
-	(text "MEM_read_data" (rect 2522 552 2664 570)(font "Arial" (font_size 6)))
-	(pt 2664 568)
-	(pt 2512 568)
-	(bus)
-)
-(connector
-	(text "rd2" (rect 2330 520 2357 538)(font "Arial" (font_size 6)))
-	(pt 2392 536)
-	(pt 2320 536)
-	(bus)
-)
-(connector
-	(text "AUL_res[7..0]" (rect 2314 536 2430 554)(font "Arial" (font_size 6)))
-	(pt 2392 552)
-	(pt 2304 552)
-	(bus)
-)
-(connector
-	(text "PC" (rect 498 440 527 458)(font "Arial" (font_size 6)))
+	(text "PC[31..0]" (rect 498 440 578 458)(font "Arial" (font_size 6)))
 	(pt 488 456)
 	(pt 552 456)
 	(bus)
 )
 (connector
-	(text "PC" (rect 674 368 703 386)(font "Arial" (font_size 6)))
-	(pt 664 384)
-	(pt 728 384)
+	(text "PC_next[31..0]" (rect 234 472 357 490)(font "Arial" (font_size 6)))
+	(pt 224 488)
+	(pt 288 488)
+	(bus)
+)
+(connector
+	(text "PC_inc[31..0]" (rect 1090 384 1204 402)(font "Arial" (font_size 6)))
+	(pt 1184 400)
+	(pt 1080 400)
+	(bus)
+)
+(connector
+	(text "instruction[31..0]" (rect 1074 400 1207 418)(font "Arial" (font_size 6)))
+	(pt 1184 416)
+	(pt 1064 416)
+	(bus)
+)
+(connector
+	(text "PC_jump[31..0]" (rect 1514 560 1643 578)(font "Arial" (font_size 6)))
+	(pt 1504 576)
+	(pt 1576 576)
+	(bus)
+)
+(connector
+	(text "PC_b_offset[31..0]" (rect 1504 576 1660 594)(font "Arial" (font_size 6)))
+	(pt 1504 592)
+	(pt 1576 592)
+	(bus)
+)
+(connector
+	(text "rd1[31..0]" (rect 1514 528 1591 546)(font "Arial" (font_size 6)))
+	(pt 1504 544)
+	(pt 1576 544)
+	(bus)
+)
+(connector
+	(text "ALU_op[5..0]" (rect 1514 480 1626 498)(font "Arial" (font_size 6)))
+	(pt 1504 496)
+	(pt 1576 496)
+	(bus)
+)
+(connector
+	(text "ALU_shamt[4..0]" (rect 1504 496 1644 514)(font "Arial" (font_size 6)))
+	(pt 1504 512)
+	(pt 1576 512)
+	(bus)
+)
+(connector
+	(text "ALU_funct[5..0]" (rect 1514 512 1642 530)(font "Arial" (font_size 6)))
+	(pt 1504 528)
+	(pt 1576 528)
+	(bus)
+)
+(connector
+	(text "write_data[31..0]" (rect 1098 448 1234 466)(font "Arial" (font_size 6)))
+	(pt 1184 464)
+	(pt 1088 464)
+	(bus)
+)
+(connector
+	(pt 1048 688)
+	(pt 1680 688)
+)
+(connector
+	(pt 1184 432)
+	(pt 1048 432)
+)
+(connector
+	(pt 1048 432)
+	(pt 1048 688)
+)
+(connector
+	(pt 1680 368)
+	(pt 1680 688)
+)
+(connector
+	(text "REG_write_outp" (rect 1504 352 1643 370)(font "Arial" (font_size 6)))
+	(pt 1504 368)
+	(pt 1680 368)
+)
+(connector
+	(text "REG_write_adr_outp[4..0]" (rect 1504 464 1721 482)(font "Arial" (font_size 6)))
+	(pt 1504 480)
+	(pt 1664 480)
+	(bus)
+)
+(connector
+	(pt 1664 480)
+	(pt 1664 672)
+	(bus)
+)
+(connector
+	(pt 1664 672)
+	(pt 1064 672)
+	(bus)
+)
+(connector
+	(pt 1064 672)
+	(pt 1064 448)
+	(bus)
+)
+(connector
+	(pt 1064 448)
+	(pt 1184 448)
+	(bus)
+)
+(connector
+	(text "MEM_to_REG" (rect 2976 480 3103 498)(font "Arial" (font_size 6)))
+	(pt 3088 496)
+	(pt 2976 496)
+)
+(connector
+	(text "write_data[31..0]" (rect 3282 480 3418 498)(font "Arial" (font_size 6)))
+	(pt 3272 496)
+	(pt 3368 496)
+	(bus)
+)
+(connector
+	(text "AUL_res[31..0]" (rect 3010 496 3137 514)(font "Arial" (font_size 6)))
+	(pt 3088 512)
+	(pt 3000 512)
+	(bus)
+)
+(connector
+	(text "MEM_read_data[31..0]" (rect 2946 512 3139 530)(font "Arial" (font_size 6)))
+	(pt 2936 528)
+	(pt 3088 528)
+	(bus)
+)
+(connector
+	(text "ALU_overflow" (rect 2112 400 2230 418)(font "Arial" (font_size 6)))
+	(pt 2112 416)
+	(pt 2200 416)
+)
+(connector
+	(text "ALU_c_out" (rect 2122 384 2217 402)(font "Arial" (font_size 6)))
+	(pt 2112 400)
+	(pt 2200 400)
+)
+(connector
+	(text "ALU_zero" (rect 2122 368 2208 386)(font "Arial" (font_size 6)))
+	(pt 2112 384)
+	(pt 2200 384)
+)
+(connector
+	(text "AUL_res[31..0]" (rect 2122 352 2249 370)(font "Arial" (font_size 6)))
+	(pt 2112 368)
+	(pt 2200 368)
+	(bus)
+)
+(connector
+	(text "ALU_shamt[4..0]" (rect 1744 432 1884 450)(font "Arial" (font_size 6)))
+	(pt 1840 448)
+	(pt 1744 448)
+	(bus)
+)
+(connector
+	(text "ALU_funct[5..0]" (rect 1754 448 1882 466)(font "Arial" (font_size 6)))
+	(pt 1840 464)
+	(pt 1744 464)
+	(bus)
+)
+(connector
+	(text "PC_b_offset[31..0]" (rect 1744 352 1900 370)(font "Arial" (font_size 6)))
+	(pt 1744 368)
+	(pt 1840 368)
+	(bus)
+)
+(connector
+	(text "rd1[31..0]" (rect 1754 368 1831 386)(font "Arial" (font_size 6)))
+	(pt 1744 384)
+	(pt 1840 384)
+	(bus)
+)
+(connector
+	(text "rd2[31..0]" (rect 1754 384 1831 402)(font "Arial" (font_size 6)))
+	(pt 1744 400)
+	(pt 1840 400)
+	(bus)
+)
+(connector
+	(text "ALU_src" (rect 1754 400 1829 418)(font "Arial" (font_size 6)))
+	(pt 1744 416)
+	(pt 1840 416)
+)
+(connector
+	(text "ALU_op[5..0]" (rect 1754 416 1866 434)(font "Arial" (font_size 6)))
+	(pt 1744 432)
+	(pt 1840 432)
+	(bus)
+)
+(connector
+	(text "PC_next[31..0]" (rect 2698 328 2821 346)(font "Arial" (font_size 6)))
+	(pt 2688 344)
+	(pt 2752 344)
+	(bus)
+)
+(connector
+	(text "MEM_read_data[31..0]" (rect 2602 568 2795 586)(font "Arial" (font_size 6)))
+	(pt 2744 584)
+	(pt 2592 584)
+	(bus)
+)
+(connector
+	(text "clk" (rect 2418 568 2440 586)(font "Arial" (font_size 6)))
+	(pt 2408 584)
+	(pt 2472 584)
+)
+(connector
+	(text "rd2[31..0]" (rect 2410 536 2487 554)(font "Arial" (font_size 6)))
+	(pt 2400 552)
+	(pt 2472 552)
+	(bus)
+)
+(connector
+	(text "AUL_res[7..0]" (rect 2394 552 2510 570)(font "Arial" (font_size 6)))
+	(pt 2384 568)
+	(pt 2472 568)
+	(bus)
+)
+(connector
+	(text "MEM_write" (rect 2384 600 2480 618)(font "Arial" (font_size 6)))
+	(pt 2384 616)
+	(pt 2472 616)
+)
+(connector
+	(text "PC_inc[31..0]" (rect 2354 328 2468 346)(font "Arial" (font_size 6)))
+	(pt 2344 344)
+	(pt 2424 344)
+	(bus)
+)
+(connector
+	(text "PC_jump[31..0]" (rect 2338 344 2467 362)(font "Arial" (font_size 6)))
+	(pt 2328 360)
+	(pt 2424 360)
+	(bus)
+)
+(connector
+	(text "PC_b_offset[31..0]" (rect 2328 360 2484 378)(font "Arial" (font_size 6)))
+	(pt 2328 376)
+	(pt 2424 376)
+	(bus)
+)
+(connector
+	(text "jump" (rect 2338 376 2376 394)(font "Arial" (font_size 6)))
+	(pt 2328 392)
+	(pt 2424 392)
+)
+(connector
+	(text "branch" (rect 2338 392 2393 410)(font "Arial" (font_size 6)))
+	(pt 2328 408)
+	(pt 2424 408)
+)
+(connector
+	(text "ALU_zero" (rect 2322 408 2408 426)(font "Arial" (font_size 6)))
+	(pt 2312 424)
+	(pt 2424 424)
+)
+(connector
+	(text "clk" (rect 650 368 672 386)(font "Arial" (font_size 6)))
+	(pt 640 384)
+	(pt 704 384)
+)
+(connector
+	(text "grst" (rect 650 384 680 402)(font "Arial" (font_size 6)))
+	(pt 640 400)
+	(pt 704 400)
+)
+(connector
+	(text "clk" (rect 690 568 712 586)(font "Arial" (font_size 6)))
+	(pt 680 584)
+	(pt 744 584)
+)
+(connector
+	(pt 672 624)
+	(pt 672 616)
+)
+(connector
+	(pt 672 616)
+	(pt 744 616)
+)
+(connector
+	(text "PC[7..0]" (rect 690 552 759 570)(font "Arial" (font_size 6)))
+	(pt 744 568)
+	(pt 680 568)
+	(bus)
+)
+(connector
+	(text "PC[31..0]" (rect 650 400 730 418)(font "Arial" (font_size 6)))
+	(pt 640 416)
+	(pt 704 416)
+	(bus)
+)
+(connector
+	(text "PC_inc[31..0]" (rect 914 368 1028 386)(font "Arial" (font_size 6)))
+	(pt 904 384)
+	(pt 960 384)
+	(bus)
+)
+(connector
+	(text "instruction[31..0]" (rect 866 576 999 594)(font "Arial" (font_size 6)))
+	(pt 856 592)
+	(pt 928 592)
 	(bus)
 )
