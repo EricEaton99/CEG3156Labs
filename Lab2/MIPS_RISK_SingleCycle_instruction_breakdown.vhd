@@ -1,19 +1,20 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+use work.MIPS_RISK_SingleCycle_VARS.all;
 
 
 entity MIPS_RISK_SingleCycle_instruction_breakdown is
 port(
-	instruction : in std_logic_vector(31 downto 0);
+	instruction : in std_logic_vector(isz-1 downto 0);
 	instruction_type : out std_logic_vector(5 downto 0);
-	rs, rt, rd : out std_logic_vector(6 downto 0);
+	rs, rt, rd : out std_logic_vector(dasz-1 downto 0);
 	shamt : out std_logic_vector(10 downto 6);
 	funct : out std_logic_vector(5 downto 0);
-	address_b : out std_logic_vector(15 downto 0);
-	address_j : out std_logic_vector(25 downto 0));
+	address_b : out std_logic_vector(absz-1 downto 0);
+	address_j : out std_logic_vector(ajsz-1 downto 0));
 end MIPS_RISK_SingleCycle_instruction_breakdown;
 
-architecture rtl of MIPS_RISK_SingleCycle_instruction_breakdown is
+architecture structural of MIPS_RISK_SingleCycle_instruction_breakdown is
 
 
 begin
@@ -28,6 +29,6 @@ begin
 	rd <= instruction(15 downto 11);
 	shamt <= instruction(10 downto 6);
 	funct <= instruction(5 downto 0);
-	address_b <= instruction(15 downto 0);
-	address_j <= instruction(25 downto 0);
-end rtl;
+	address_b <= instruction(absz-1 downto 0);
+	address_j <= instruction(ajsz-1 downto 0);
+end structural;

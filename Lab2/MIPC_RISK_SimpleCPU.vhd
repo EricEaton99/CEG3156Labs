@@ -28,7 +28,7 @@ signal ALU_ctrl : std_logic_vector(2 downto 0);
 
 -- instruction part
 signal instruction_type : std_logic_vector(itsz-1 downto 0);
-signal REG_adr1, REG_adr2, REG_write_adr, REG_write_adr_t : std_logic_vector(dabsz-1 downto 0);
+signal REG_adr1, REG_adr2, REG_write_adr, REG_write_adr_t : std_logic_vector(dasz-1 downto 0);
 signal ALU_shamt : std_logic_vector(10 downto 6);
 signal ALU_funct : std_logic_vector(5 downto 0);
 signal address_b : std_logic_vector(absz-1 downto 0);
@@ -84,7 +84,7 @@ begin
 		port map(REG_dst, REG_write_adr_t, REG_adr2, REG_write_adr);
 	
 	registers : entity work.reg_block_r2w1(structural)
-		generic map(dsz, dabsz)
+		generic map(dsz, dasz)
 		port map(clk, global_reset, REG_write,
 			REG_adr1, REG_adr2, REG_write_adr,
 			REG_write_data, 

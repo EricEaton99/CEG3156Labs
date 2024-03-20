@@ -11,11 +11,11 @@ entity ID_CTRL_REG is
 		PC_inc : in std_logic_vector(isz-1 downto 0);
 		instruction : in std_logic_vector(isz-1 downto 0);
 		REG_write_inp : in std_logic;
-		REG_write_adr_inp : in std_logic_vector(dabsz-1 downto 0);
+		REG_write_adr_inp : in std_logic_vector(dasz-1 downto 0);
 		REG_write_data_inp : in std_logic_vector(dsz-1 downto 0);
 		
 		REG_write_outp, ALU_src, MEM_write, MEM_read, MEM_to_REG, jump, branch: out std_logic;
-		REG_write_adr_outp : out std_logic_vector(dabsz-1 downto 0);
+		REG_write_adr_outp : out std_logic_vector(dasz-1 downto 0);
 		ALU_op : out std_logic_vector(5 downto 0);
 		ALU_shamt : out std_logic_vector(10 downto 6);
 		ALU_funct : out std_logic_vector(5 downto 0);
@@ -35,7 +35,7 @@ signal REG_dst, REG_write : std_logic;
 
 -- instruction part
 signal instruction_type : std_logic_vector(itsz-1 downto 0);
-signal REG_adr1, REG_adr2, REG_write_adr : std_logic_vector(dabsz-1 downto 0);
+signal REG_adr1, REG_adr2, REG_write_adr : std_logic_vector(dasz-1 downto 0);
 signal address_b : std_logic_vector(absz-1 downto 0);
 signal address_j : std_logic_vector(ajsz-1 downto 0);
 
@@ -64,11 +64,11 @@ begin
 	
 	
 	REG_mux : entity work.nBit_mux2(structural)
-		generic map(dsz)
+		generic map(dasz)
 		port map(REG_dst, REG_write_adr_inp, REG_adr2, REG_write_adr);
 	
 	registers : entity work.reg_block_r2w1(structural)
-		generic map(dsz, dabsz)
+		generic map(dsz, dasz)
 		port map(clk, global_reset, REG_write_inp,
 			REG_adr1, REG_adr2, REG_write_adr,
 			REG_write_data_inp, 
@@ -78,7 +78,7 @@ begin
 	PC_branch_offset(absz+isz_static-1 downto isz_static) <= address_b;
 	PC_branch_offset(isz_static-1 downto 0) <= (others => '0');
 	
-	PC_jump(isz-1 downto ajsz+isz_static) <= PC_inc;
+	PC_jump(isz-1 downto ajsz+isz_static) <= PC_inc(isz-1 downto ajsz+isz_static);
 	PC_jump(ajsz+isz_static-1 downto isz_static) <= address_j;
 	PC_jump(isz_static-1 downto 0) <= (others => '0');
 end structural;
