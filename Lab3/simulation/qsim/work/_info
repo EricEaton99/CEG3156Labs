@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Wring\Documents\_uOttawa\2024Winter\CEG3156\Labs\Lab3\simulation\qsim
+vcomponent_test
+Z1 I7l><;kiXk3Q>Po3BcKB]I3
+Z2 Vcff=>:QQ>2AR:k]=GOTG80
+Z3 dC:\Users\Wring\Documents\_uOttawa\2024Winter\CEG3156\Labs\Lab3\simulation\qsim
+Z4 w1711322929
+Z5 8MIPS_RISK_PipelinedProcessor.vo
+Z6 FMIPS_RISK_PipelinedProcessor.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|MIPS_RISK_PipelinedProcessor.vo|
+Z9 o-work work -O0
+Z10 !s100 AdCeNZjIT8a[?lhnYe:f;0
+Z11 !s108 1711322929.523000
+Z12 !s107 MIPS_RISK_PipelinedProcessor.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vcomponent_test_vlg_check_tst
+Z13 !s100 @b]4hzl2lLD;<[CBZW>U01
+Z14 IJB@<T^<zPHeh`]WDYb:=L2
+Z15 VHbVVlPT^52J0Tfo1?64T41
+R3
+Z16 w1711322928
+Z17 8component_test.vwf.vt
+Z18 Fcomponent_test.vwf.vt
+L0 65
+R7
+r1
+31
+Z19 !s108 1711322929.555000
+Z20 !s107 component_test.vwf.vt|
+Z21 !s90 -work|work|component_test.vwf.vt|
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vcomponent_test_vlg_sample_tst
+Z22 !s100 lRo1KUEeHI;4_;_VK]ndU1
+Z23 I]606gWk1gJ?ZNG=Z=BfY^0
+Z24 VRb`n:RL<XShY:jQ]fzC<O0
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vcomponent_test_vlg_vec_tst
+Z25 !s100 3NUnz9`U9`MWlESckN>4N2
+Z26 Icah9z>UmW5O@_mf>@U=Im2
+Z27 VFe6`i^bg[h_3FE_N=g7ZF0
+R3
+R16
+R17
+R18
+Z28 L0 187
+R7
+r1
+31
+R19
+R20
+R21
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vtop_level
+Z29 I;C1Ma:MQUSIC2jdbla`>62
+Z30 V61B9=fWbKF>gdFIFC4LnP0
+R3
+Z31 w1711323695
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+!i10b 1
+Z32 !s100 28oDM>T?<nTO===R6AJ>]1
+!s85 0
+Z33 !s108 1711323695.457000
+R12
+!s101 -O0
+vtop_level_vlg_check_tst
+!i10b 1
+Z34 !s100 C2_BG[i6g:LFMETHHk^IG1
+Z35 IS8QHd2ND:K7?TX@NJQ@182
+Z36 VMD;:?Z::@KgS@`YNKFc:X1
+R3
+Z37 w1711323694
+R17
+R18
+L0 61
+R7
+r1
+!s85 0
+31
+Z38 !s108 1711323695.504000
+Z39 !s107 component_test.vwf.vt|
+R21
+!s101 -O0
+R9
+vtop_level_vlg_sample_tst
+!i10b 1
+Z40 !s100 EBa2ORkg^EaaaJg3Vg[>`3
+Z41 I=mlmR4g[:CSXdYM`cIRQz0
+Z42 VKbeBj>eLV[EU42IjJI;he3
+R3
+R37
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R38
+R39
+R21
+!s101 -O0
+R9
+vtop_level_vlg_vec_tst
+!i10b 1
+Z43 !s100 H`N:?VI1c5?R9?hYD`J342
+Z44 ICOO6BKAfTLg^PecoZ4_NP0
+Z45 V=nL=_2N5S:^=<U4>RnULe1
+R3
+R37
+R17
+R18
+Z46 L0 865
+R7
+r1
+!s85 0
+31
+R38
+R39
+R21
+!s101 -O0
+R9
