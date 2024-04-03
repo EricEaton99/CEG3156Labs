@@ -35,7 +35,7 @@ signal REG_dst, REG_write : std_logic;
 
 -- instruction part
 signal instruction_type : std_logic_vector(itsz-1 downto 0);
-signal REG_adr1, REG_adr2, REG_write_adr : std_logic_vector(dasz-1 downto 0);
+signal rs, rt, rd, REG_write_adr : std_logic_vector(dasz-1 downto 0);
 signal address_b : std_logic_vector(absz-1 downto 0);
 signal address_j : std_logic_vector(ajsz-1 downto 0);
 
@@ -50,12 +50,11 @@ begin
 		port map(
 			instruction, 
 			instruction_type, 
-			REG_adr1, REG_adr2, REG_write_adr_outp,
+			rs, rt, rd,
 			ALU_shamt, 
 			ALU_funct,
 			address_b, address_j);
 			
-	
 	
 	-- Control here
 	--		in: instruction
@@ -68,12 +67,13 @@ begin
 	
 	REG_mux : entity work.nBit_mux2(structural)
 		generic map(dasz)
-		port map(REG_dst, REG_write_adr_inp, REG_adr2, REG_write_adr);
+		port map(REG_dst, rt, rd, REG_write_adr);
+	REG_write_adr_outp <= REG_write_adr;
 	
 	registers : entity work.reg_block_r2w1(structural)
 		generic map(dsz, dasz)
 		port map(clk, global_reset, REG_write_inp,
-			REG_adr1, REG_adr2, REG_write_adr,
+			rs, rd, REG_write_adr,
 			REG_write_data_inp, 
 			REG_data1, REG_data2);
 	
