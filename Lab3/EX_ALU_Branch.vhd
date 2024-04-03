@@ -12,11 +12,11 @@ entity EX_ALU is
 		REG_data1, REG_data2 : in std_logic_vector(dsz-1 downto 0);
 		ALU_src: in std_logic;
 		ALU_op : in std_logic_vector(5 downto 0);
-		ALU_shamt : in std_logic_vector(10 downto 6);
+		ALU_shamt : in std_logic_vector(4 downto 0);
 		ALU_funct : in std_logic_vector(5 downto 0);
 		
 		ALU_result : out std_logic_vector(dsz-1 downto 0);
-		ALU_zero, ALU_c_out, ALU_overflow : out std_logic
+		ALU_zero, ALU_c_out, ALU_overflow, ALU_less_than, ALU_equal : out std_logic
 		);
 end EX_ALU;
 
@@ -40,20 +40,16 @@ begin
 	--		out: ALU_ctrl
 	ALU_Ctrl_asa : entity work.ALUControlUnit(structural)
 		port map(ALU_op(1 downto 0), ALU_funct(3 downto 0), ALU_ctrl);
-	
- --	Opcode : in STD_LOGIC_VECTOR(1 downto 0);
- --           FunctionField : in STD_LOGIC_VECTOR(3 downto 0);
- --           ALUControl : out STD_LOGIC_VECTOR(2 downto 0));
-	
+		
 	
 	ALU_A <= REG_data1;
 	ALU_mux : entity work.nBit_mux2(structural)
 		generic map(dsz)
-		port map(ALU_src, PC_branch_offset(dsz-1 downto 0), REG_data2, ALU_B);
+		port map(ALU_src, REG_data2, PC_branch_offset(dsz-1 downto 0), ALU_B);
 	
 	ALU : entity work.ALU_Simple(structural)
 		generic map(dsz)
-		port map(ALU_A, ALU_B, ALU_ctrl, ALU_result, ALU_zero, ALU_c_out, ALU_overflow);
-				-- A, B, op_sel, result, zero, c_out, overflow
+		port map(ALU_A, ALU_B, ALU_ctrl, ALU_result, ALU_zero, ALU_c_out, ALU_overflow, ALU_less_than, ALU_equal);
+				-- A, 		B, 	op_sel, 	result, 		zero, 		c_out, 		overflow, less_than, 		equal_to
 	
 end structural;

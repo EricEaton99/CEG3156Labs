@@ -61,8 +61,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "ALU_shamt[10..6]" (rect 0 0 75 12)(font "Arial" ))
-		(text "ALU_shamt[10..6]" (rect 21 107 96 119)(font "Arial" ))
+		(text "ALU_shamt[4..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "ALU_shamt[4..0]" (rect 21 107 94 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
@@ -99,6 +99,20 @@ applicable agreement for further details.
 		(text "ALU_overflow" (rect 0 0 61 12)(font "Arial" ))
 		(text "ALU_overflow" (rect 190 75 251 87)(font "Arial" ))
 		(line (pt 272 80)(pt 256 80)(line_width 1))
+	)
+	(port
+		(pt 272 96)
+		(output)
+		(text "ALU_less_than" (rect 0 0 64 12)(font "Arial" ))
+		(text "ALU_less_than" (rect 187 91 251 103)(font "Arial" ))
+		(line (pt 272 96)(pt 256 96)(line_width 1))
+	)
+	(port
+		(pt 272 112)
+		(output)
+		(text "ALU_equal" (rect 0 0 47 12)(font "Arial" ))
+		(text "ALU_equal" (rect 204 107 251 119)(font "Arial" ))
+		(line (pt 272 112)(pt 256 112)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 256 160)(line_width 1))
