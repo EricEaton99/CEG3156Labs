@@ -63,6 +63,7 @@ begin
 	MainControlUnit_rkjerh : entity work.MainControlUnit(structural)
 		port map(instruction(31 downto 26), REG_dst, ALU_src, MEM_to_REG, REG_write, MEM_read, MEM_write, branch, jump, ALU_op(1 downto 0));
 	
+	REG_write_outp <= REG_write;
 	ALU_op(5 downto 2) <= "0000";
 	
 	REG_mux : entity work.nBit_mux2(structural)
@@ -76,11 +77,17 @@ begin
 			REG_write_data_inp, 
 			REG_data1, REG_data2);
 	
-	PC_branch_offset(isz-1 downto absz+isz_static) <= (others => address_b(absz-1));
-	PC_branch_offset(absz+isz_static-1 downto isz_static) <= address_b;
-	PC_branch_offset(isz_static-1 downto 0) <= (others => '0');
+--	PC_branch_offset(isz-1 downto absz+isz_static) <= (others => address_b(absz-1));
+--	PC_branch_offset(absz+isz_static-1 downto isz_static) <= address_b;
+--	PC_branch_offset(isz_static-1 downto 0) <= (others => '0');
+--	
+--	PC_jump(isz-1 downto ajsz+isz_static) <= PC_inc(isz-1 downto ajsz+isz_static);
+--	PC_jump(ajsz+isz_static-1 downto isz_static) <= address_j;
+--	PC_jump(isz_static-1 downto 0) <= (others => '0');;
 	
-	PC_jump(isz-1 downto ajsz+isz_static) <= PC_inc(isz-1 downto ajsz+isz_static);
-	PC_jump(ajsz+isz_static-1 downto isz_static) <= address_j;
-	PC_jump(isz_static-1 downto 0) <= (others => '0');
+	PC_branch_offset(isz-1 downto absz) <= (others => address_b(absz-1));
+	PC_branch_offset(absz-1 downto 0) <= address_b;
+	
+	PC_jump(isz-1 downto ajsz) <= PC_inc(isz-1 downto ajsz);
+	PC_jump(ajsz-1 downto 0) <= address_j;
 end structural;

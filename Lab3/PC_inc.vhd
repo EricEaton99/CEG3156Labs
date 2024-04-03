@@ -7,8 +7,8 @@ use work.MIPS_RISK_SingleCycle_VARS.all;
 
 entity IF_PC_inc is
 	port(
-		PC : in std_logic_vector(dsz-1 downto 0);
-		PC_inc : out std_logic_vector(dsz-1 downto 0));
+		PC : in std_logic_vector(isz-1 downto 0);
+		PC_inc : out std_logic_vector(isz-1 downto 0));
 end IF_PC_inc;
 
 

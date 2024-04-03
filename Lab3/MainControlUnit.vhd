@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity MainControlUnit is
-    Port (Instruction : in STD_LOGIC_VECTOR(31 downto 26);
+    Port (Instruction : in STD_LOGIC_VECTOR(5 downto 0);
                RegDst : out STD_LOGIC;
                ALUSrc : out STD_LOGIC;
                MemToReg : out STD_LOGIC;
@@ -15,15 +15,38 @@ entity MainControlUnit is
 end MainControlUnit;
 
 architecture Structural of MainControlUnit is
+
+signal R, lw, sw, beq, j : std_logic;
+
 begin
-    RegDst <= NOT Instruction(31);
-    ALUSrc <= Instruction(27);
-    MemToReg <= Instruction(26);
-    RegWrite <= (NOT Instruction(28) AND NOT Instruction(27)) OR (Instruction(31) AND NOT Instruction(29));
-    MemRead <= Instruction(31) AND NOT Instruction(29);
-    MemWrite <= Instruction(29);
-    Branch <= Instruction(28);
-    Jump <= NOT Instruction(31) AND NOT Instruction(28);
-    ALUOp(1) <= NOT Instruction(31) AND NOT Instruction(28);
-    ALUOp(0) <= Instruction(28);
+	--	code		bin				op
+	--		0		000000			R-Type
+	--	35/43		100011/101011	Load/Store
+	--		4		000100			Branch
+	--		2		000010			Jump
+	
+--	Instruction RegDst ALUSrc MemtoReg RegWrite MemRead MemWrite Branch ALUOp1 ALUOp0
+--	R-format 		1 		0 			0 			1 			0 			0 		0 		1 			0
+--	lw 				0 		1 			1 			1 			1 			0 		0 		0 			0
+--	sw 				X 		1 			X 			0 			0 			1 		0 		0 			0
+--	beq 				X 		0 			X 			0 			0 			0 		1	 	0 			1
+-- jump				!!!!!!!!!!!!!!!!!!!!!!!!!!DO THIS!!!!!!!!!!!!!!!!!!!!!!!!
+	
+	R <= Instruction(2) nor Instruction(1);
+	lw <= Instruction(0) and not Instruction(3);
+	sw <= Instruction(0) and Instruction(3);
+	beq <= Instruction(2);
+	j <= not Instruction(0)and Instruction(1);
+
+	 
+	RegDst <= R;
+	ALUSrc <= lw or sw;
+	MemToReg <= lw;
+	RegWrite <= R or lw;
+	MemRead <= lw;
+	MemWrite <= sw;
+	Branch <= beq;
+	Jump <= '0';			--DO THIS
+	ALUOp(1) <= R;
+	ALUOp(0) <= beq;
 end Structural;

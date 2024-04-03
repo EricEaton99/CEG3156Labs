@@ -41,15 +41,15 @@ begin
 	ALU_Ctrl_asa : entity work.ALUControlUnit(structural)
 		port map(ALU_op(1 downto 0), ALU_funct(3 downto 0), ALU_ctrl);
 	
---	Opcode : in STD_LOGIC_VECTOR(1 downto 0);
---           FunctionField : in STD_LOGIC_VECTOR(3 downto 0);
---           ALUControl : out STD_LOGIC_VECTOR(2 downto 0));
+ --	Opcode : in STD_LOGIC_VECTOR(1 downto 0);
+ --           FunctionField : in STD_LOGIC_VECTOR(3 downto 0);
+ --           ALUControl : out STD_LOGIC_VECTOR(2 downto 0));
 	
 	
 	ALU_A <= REG_data1;
 	ALU_mux : entity work.nBit_mux2(structural)
 		generic map(dsz)
-		port map(ALU_src, PC_branch_offset, REG_data2, ALU_B);
+		port map(ALU_src, PC_branch_offset(dsz-1 downto 0), REG_data2, ALU_B);
 	
 	ALU : entity work.ALU_Simple(structural)
 		generic map(dsz)

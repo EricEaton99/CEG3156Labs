@@ -22,13 +22,13 @@
 # Loading cycloneiv_ver.cycloneiv_mux41
 # Loading cycloneiv_ver.cycloneiv_ena_reg
 # Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
 # Loading cycloneiv_ver.cycloneiv_ram_block
 # Loading cycloneiv_ver.cycloneiv_ram_register
 # Loading cycloneiv_ver.cycloneiv_ram_pulse_generator
-# Loading altera_ver.dffeas
 # Loading work.top_level_vlg_sample_tst
 # Loading work.top_level_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : component_test.vwf.vt(861)
-#    Time: 1 us  Iteration: 0  Instance: /top_level_vlg_vec_tst/tb_out
+# ** Note: $finish    : component_test.vwf.vt(1664)
+#    Time: 20 us  Iteration: 0  Instance: /top_level_vlg_vec_tst/tb_out

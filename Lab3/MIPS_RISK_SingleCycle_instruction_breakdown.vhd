@@ -24,9 +24,9 @@ begin
 	--				[ inst | REG1_adr | REG2_adr | address ]
 	
 	instruction_type <= instruction(31 downto 26);
-	rs <= instruction(25 downto 21);
-	rt <= instruction(20 downto 16);
-	rd <= instruction(15 downto 11);
+	rs <= instruction(23 downto 21);		--only take 3
+	rt <= instruction(18 downto 16);
+	rd <= instruction(13 downto 11);
 	shamt <= instruction(10 downto 6);
 	funct <= instruction(5 downto 0);
 	address_b <= instruction(absz-1 downto 0);

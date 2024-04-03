@@ -1,15 +1,15 @@
 
-WIDTH=32;
+WIDTH=8;
 DEPTH=256;
 
 ADDRESS_RADIX=UNS;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	0    :   00000055;
-	1    :   000000AA;
-	2    :   00000000;
-	3    :   000000FF;
-	4    :   000000FF;
-	[5..255]  :   00000000;
+	0    :   55;
+	1    :   AA;
+	2    :   00;
+	3    :   FF;
+	4    :   FF;
+	[5..255]  :   00;
 END;
