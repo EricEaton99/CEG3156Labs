@@ -25,214 +25,14 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 1000.0;
+	DATA_DURATION = 2000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("ALU_functxcfb")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 6;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("ALU_functxcfb[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_functxcfb";
-}
-
-SIGNAL("ALU_functxcfb[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_functxcfb";
-}
-
-SIGNAL("ALU_functxcfb[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_functxcfb";
-}
-
-SIGNAL("ALU_functxcfb[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_functxcfb";
-}
-
-SIGNAL("ALU_functxcfb[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_functxcfb";
-}
-
-SIGNAL("ALU_functxcfb[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_functxcfb";
-}
-
-SIGNAL("ALU_opdfsgd")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 6;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("ALU_opdfsgd[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_opdfsgd";
-}
-
-SIGNAL("ALU_opdfsgd[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_opdfsgd";
-}
-
-SIGNAL("ALU_opdfsgd[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_opdfsgd";
-}
-
-SIGNAL("ALU_opdfsgd[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_opdfsgd";
-}
-
-SIGNAL("ALU_opdfsgd[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_opdfsgd";
-}
-
-SIGNAL("ALU_opdfsgd[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_opdfsgd";
-}
-
-SIGNAL("ALU_shamtzf")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 5;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("ALU_shamtzf[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_shamtzf";
-}
-
-SIGNAL("ALU_shamtzf[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_shamtzf";
-}
-
-SIGNAL("ALU_shamtzf[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_shamtzf";
-}
-
-SIGNAL("ALU_shamtzf[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_shamtzf";
-}
-
-SIGNAL("ALU_shamtzf[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "ALU_shamtzf";
-}
-
-SIGNAL("ALU_srcghtd")
+SIGNAL("clk")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -242,557 +42,387 @@ SIGNAL("ALU_srcghtd")
 	PARENT = "";
 }
 
-SIGNAL("PC_branch_offsesgdrt")
+SIGNAL("global_reset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("IMEM_out")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
 	WIDTH = 32;
 	LSB_INDEX = 0;
-	DIRECTION = INPUT;
+	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("PC_branch_offsesgdrt[31]")
+SIGNAL("IMEM_out[31]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[30]")
+SIGNAL("IMEM_out[30]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[29]")
+SIGNAL("IMEM_out[29]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[28]")
+SIGNAL("IMEM_out[28]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[27]")
+SIGNAL("IMEM_out[27]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[26]")
+SIGNAL("IMEM_out[26]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[25]")
+SIGNAL("IMEM_out[25]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[24]")
+SIGNAL("IMEM_out[24]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[23]")
+SIGNAL("IMEM_out[23]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[22]")
+SIGNAL("IMEM_out[22]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[21]")
+SIGNAL("IMEM_out[21]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[20]")
+SIGNAL("IMEM_out[20]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[19]")
+SIGNAL("IMEM_out[19]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[18]")
+SIGNAL("IMEM_out[18]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[17]")
+SIGNAL("IMEM_out[17]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[16]")
+SIGNAL("IMEM_out[16]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[15]")
+SIGNAL("IMEM_out[15]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[14]")
+SIGNAL("IMEM_out[14]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[13]")
+SIGNAL("IMEM_out[13]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[12]")
+SIGNAL("IMEM_out[12]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[11]")
+SIGNAL("IMEM_out[11]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[10]")
+SIGNAL("IMEM_out[10]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[9]")
+SIGNAL("IMEM_out[9]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[8]")
+SIGNAL("IMEM_out[8]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[7]")
+SIGNAL("IMEM_out[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[6]")
+SIGNAL("IMEM_out[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[5]")
+SIGNAL("IMEM_out[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[4]")
+SIGNAL("IMEM_out[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[3]")
+SIGNAL("IMEM_out[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[2]")
+SIGNAL("IMEM_out[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[1]")
+SIGNAL("IMEM_out[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("PC_branch_offsesgdrt[0]")
+SIGNAL("IMEM_out[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "PC_branch_offsesgdrt";
+	DIRECTION = OUTPUT;
+	PARENT = "IMEM_out";
 }
 
-SIGNAL("REG_data1sg")
+SIGNAL("output_sel")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
+	WIDTH = 3;
 	LSB_INDEX = 0;
 	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("REG_data1sg[7]")
+SIGNAL("output_sel[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "REG_data1sg";
+	PARENT = "output_sel";
 }
 
-SIGNAL("REG_data1sg[6]")
+SIGNAL("output_sel[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "REG_data1sg";
+	PARENT = "output_sel";
 }
 
-SIGNAL("REG_data1sg[5]")
+SIGNAL("output_sel[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "REG_data1sg";
+	PARENT = "output_sel";
 }
 
-SIGNAL("REG_data1sg[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data1sg";
-}
-
-SIGNAL("REG_data1sg[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data1sg";
-}
-
-SIGNAL("REG_data1sg[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data1sg";
-}
-
-SIGNAL("REG_data1sg[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data1sg";
-}
-
-SIGNAL("REG_data1sg[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data1sg";
-}
-
-SIGNAL("REG_data2xfbx")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("REG_data2xfbx[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data2xfbx";
-}
-
-SIGNAL("REG_data2xfbx[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data2xfbx";
-}
-
-SIGNAL("REG_data2xfbx[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data2xfbx";
-}
-
-SIGNAL("REG_data2xfbx[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data2xfbx";
-}
-
-SIGNAL("REG_data2xfbx[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data2xfbx";
-}
-
-SIGNAL("REG_data2xfbx[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data2xfbx";
-}
-
-SIGNAL("REG_data2xfbx[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data2xfbx";
-}
-
-SIGNAL("REG_data2xfbx[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "REG_data2xfbx";
-}
-
-SIGNAL("ALU_c_out")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ALU_equal")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ALU_less_than")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ALU_overflow")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ALU_result")
+SIGNAL("output_sys")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -802,87 +432,447 @@ SIGNAL("ALU_result")
 	PARENT = "";
 }
 
-SIGNAL("ALU_result[7]")
+SIGNAL("output_sys[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ALU_result";
+	PARENT = "output_sys";
 }
 
-SIGNAL("ALU_result[6]")
+SIGNAL("output_sys[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ALU_result";
+	PARENT = "output_sys";
 }
 
-SIGNAL("ALU_result[5]")
+SIGNAL("output_sys[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ALU_result";
+	PARENT = "output_sys";
 }
 
-SIGNAL("ALU_result[4]")
+SIGNAL("output_sys[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ALU_result";
+	PARENT = "output_sys";
 }
 
-SIGNAL("ALU_result[3]")
+SIGNAL("output_sys[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ALU_result";
+	PARENT = "output_sys";
 }
 
-SIGNAL("ALU_result[2]")
+SIGNAL("output_sys[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ALU_result";
+	PARENT = "output_sys";
 }
 
-SIGNAL("ALU_result[1]")
+SIGNAL("output_sys[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ALU_result";
+	PARENT = "output_sys";
 }
 
-SIGNAL("ALU_result[0]")
+SIGNAL("output_sys[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "ALU_result";
+	PARENT = "output_sys";
 }
 
-SIGNAL("ALU_zero")
+SIGNAL("PC_inc_EX")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("PC_inc_EX[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_EX";
+}
+
+SIGNAL("PC_inc_EX[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_EX";
+}
+
+SIGNAL("PC_inc_EX[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_EX";
+}
+
+SIGNAL("PC_inc_EX[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_EX";
+}
+
+SIGNAL("PC_inc_EX[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_EX";
+}
+
+SIGNAL("PC_inc_EX[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_EX";
+}
+
+SIGNAL("PC_inc_EX[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_EX";
+}
+
+SIGNAL("PC_inc_EX[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_EX";
+}
+
+SIGNAL("PC_inc_ID")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("PC_inc_ID[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_ID";
+}
+
+SIGNAL("PC_inc_ID[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_ID";
+}
+
+SIGNAL("PC_inc_ID[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_ID";
+}
+
+SIGNAL("PC_inc_ID[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_ID";
+}
+
+SIGNAL("PC_inc_ID[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_ID";
+}
+
+SIGNAL("PC_inc_ID[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_ID";
+}
+
+SIGNAL("PC_inc_ID[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_ID";
+}
+
+SIGNAL("PC_inc_ID[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_ID";
+}
+
+SIGNAL("PC_inc_MEM")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("PC_inc_MEM[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_MEM";
+}
+
+SIGNAL("PC_inc_MEM[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_MEM";
+}
+
+SIGNAL("PC_inc_MEM[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_MEM";
+}
+
+SIGNAL("PC_inc_MEM[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_MEM";
+}
+
+SIGNAL("PC_inc_MEM[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_MEM";
+}
+
+SIGNAL("PC_inc_MEM[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_MEM";
+}
+
+SIGNAL("PC_inc_MEM[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_MEM";
+}
+
+SIGNAL("PC_inc_MEM[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_inc_MEM";
+}
+
+SIGNAL("PC_next_WB")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("PC_next_WB[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_next_WB";
+}
+
+SIGNAL("PC_next_WB[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_next_WB";
+}
+
+SIGNAL("PC_next_WB[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_next_WB";
+}
+
+SIGNAL("PC_next_WB[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_next_WB";
+}
+
+SIGNAL("PC_next_WB[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_next_WB";
+}
+
+SIGNAL("PC_next_WB[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_next_WB";
+}
+
+SIGNAL("PC_next_WB[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_next_WB";
+}
+
+SIGNAL("PC_next_WB[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "PC_next_WB";
+}
+
+SIGNAL("REG_write_outp_WB")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -892,1666 +882,1688 @@ SIGNAL("ALU_zero")
 	PARENT = "";
 }
 
-TRANSITION_LIST("ALU_functxcfb[5]")
+SIGNAL("REG_write_adr_WB")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 990.0;
-		LEVEL X FOR 10.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 3;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
 }
 
-TRANSITION_LIST("ALU_functxcfb[4]")
+SIGNAL("REG_write_adr_WB[2]")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 990.0;
-		LEVEL X FOR 10.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "REG_write_adr_WB";
 }
 
-TRANSITION_LIST("ALU_functxcfb[3]")
+SIGNAL("REG_write_adr_WB[1]")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 590.0;
-		LEVEL X FOR 10.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "REG_write_adr_WB";
 }
 
-TRANSITION_LIST("ALU_functxcfb[2]")
+SIGNAL("REG_write_adr_WB[0]")
 {
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 630.0;
-		LEVEL X FOR 10.0;
-	}
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "REG_write_adr_WB";
 }
 
-TRANSITION_LIST("ALU_functxcfb[1]")
+TRANSITION_LIST("clk")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 1;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
-		}
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 40.0;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
-		}
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 590.0;
-		LEVEL X FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("ALU_functxcfb[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 630.0;
-		LEVEL X FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("ALU_opdfsgd[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_opdfsgd[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_opdfsgd[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_opdfsgd[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_opdfsgd[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 400.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 440.0;
-	}
-}
-
-TRANSITION_LIST("ALU_opdfsgd[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 440.0;
-		LEVEL 1 FOR 40.0;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
-		}
-		LEVEL 0 FOR 440.0;
-	}
-}
-
-TRANSITION_LIST("ALU_shamtzf[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_shamtzf[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_shamtzf[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_shamtzf[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_shamtzf[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ALU_srcghtd")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 200.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 440.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[31]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[30]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[29]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[28]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[27]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[26]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[25]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[24]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[23]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[22]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[21]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[20]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[19]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[18]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[17]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[16]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[15]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[14]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[13]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[12]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[11]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[10]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[9]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[8]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("PC_branch_offsesgdrt[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("REG_data1sg[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 590.0;
-		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 10.0;
-	}
-}
-
-TRANSITION_LIST("REG_data1sg[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 560.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 410.0;
-	}
-}
-
-TRANSITION_LIST("REG_data1sg[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 590.0;
-		LEVEL 0 FOR 320.0;
-		LEVEL 1 FOR 90.0;
-	}
-}
-
-TRANSITION_LIST("REG_data1sg[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 560.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 90.0;
-	}
-}
-
-TRANSITION_LIST("REG_data1sg[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 560.0;
-		LEVEL 1 FOR 30.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
-		}
-		LEVEL 0 FOR 90.0;
-	}
-}
-
-TRANSITION_LIST("REG_data1sg[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 590.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
-		}
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 50.0;
-	}
-}
-
-TRANSITION_LIST("REG_data1sg[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 570.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		NODE
-		{
-			REPEAT = 9;
-			LEVEL 1 FOR 20.0;
+			REPEAT = 50;
 			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
 		}
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
 	}
 }
 
-TRANSITION_LIST("REG_data1sg[0]")
+TRANSITION_LIST("global_reset")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 560.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 1970.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[31]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[30]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[29]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[28]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[27]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[26]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[25]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[24]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("IMEM_out[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("output_sel[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 80.0;
+		LEVEL 1 FOR 20.0;
 		NODE
 		{
-			REPEAT = 21;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
+			REPEAT = 47;
+			LEVEL 0 FOR 20.0;
+			LEVEL 1 FOR 20.0;
 		}
+		LEVEL 0 FOR 20.0;
+	}
+}
+
+TRANSITION_LIST("output_sel[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 70.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 10.0;
+		NODE
+		{
+			REPEAT = 96;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+		}
 	}
 }
 
-TRANSITION_LIST("REG_data2xfbx[7]")
+TRANSITION_LIST("output_sel[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 5.0;
+		NODE
+		{
+			REPEAT = 193;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
 	}
 }
 
-TRANSITION_LIST("REG_data2xfbx[6]")
+TRANSITION_LIST("output_sys[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 560.0;
-		LEVEL 0 FOR 440.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("REG_data2xfbx[5]")
+TRANSITION_LIST("output_sys[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 560.0;
-		LEVEL 0 FOR 440.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("REG_data2xfbx[4]")
+TRANSITION_LIST("output_sys[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("REG_data2xfbx[3]")
+TRANSITION_LIST("output_sys[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("REG_data2xfbx[2]")
+TRANSITION_LIST("output_sys[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 560.0;
-		LEVEL 0 FOR 440.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("REG_data2xfbx[1]")
+TRANSITION_LIST("output_sys[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("REG_data2xfbx[0]")
+TRANSITION_LIST("output_sys[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_c_out")
+TRANSITION_LIST("output_sys[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_equal")
+TRANSITION_LIST("PC_inc_EX[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_less_than")
+TRANSITION_LIST("PC_inc_EX[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_overflow")
+TRANSITION_LIST("PC_inc_EX[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_result[7]")
+TRANSITION_LIST("PC_inc_EX[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_result[6]")
+TRANSITION_LIST("PC_inc_EX[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_result[5]")
+TRANSITION_LIST("PC_inc_EX[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_result[4]")
+TRANSITION_LIST("PC_inc_EX[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_result[3]")
+TRANSITION_LIST("PC_inc_EX[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_result[2]")
+TRANSITION_LIST("PC_inc_ID[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_result[1]")
+TRANSITION_LIST("PC_inc_ID[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_result[0]")
+TRANSITION_LIST("PC_inc_ID[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
 	}
 }
 
-TRANSITION_LIST("ALU_zero")
+TRANSITION_LIST("PC_inc_ID[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_ID[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_ID[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_ID[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_ID[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_MEM[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_MEM[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_MEM[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_MEM[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_MEM[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_MEM[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_MEM[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_inc_MEM[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_next_WB[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_next_WB[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_next_WB[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_next_WB[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_next_WB[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_next_WB[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_next_WB[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("PC_next_WB[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("REG_write_outp_WB")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("REG_write_adr_WB[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("REG_write_adr_WB[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
+	}
+}
+
+TRANSITION_LIST("REG_write_adr_WB[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 2000.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt";
+	CHANNEL = "clk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-	CHILDREN = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[31]";
+	CHANNEL = "global_reset";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 1;
-	TREE_LEVEL = 1;
-	PARENT = 0;
+	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[30]";
+	CHANNEL = "output_sel";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 2;
-	TREE_LEVEL = 1;
-	PARENT = 0;
+	TREE_LEVEL = 0;
+	CHILDREN = 3, 4, 5;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[29]";
+	CHANNEL = "output_sel[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 2;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[28]";
+	CHANNEL = "output_sel[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 2;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[27]";
+	CHANNEL = "output_sel[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 2;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[26]";
+	CHANNEL = "IMEM_out";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 6;
-	TREE_LEVEL = 1;
-	PARENT = 0;
+	TREE_LEVEL = 0;
+	CHILDREN = 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[25]";
+	CHANNEL = "IMEM_out[31]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[24]";
+	CHANNEL = "IMEM_out[30]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[23]";
+	CHANNEL = "IMEM_out[29]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[22]";
+	CHANNEL = "IMEM_out[28]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[21]";
+	CHANNEL = "IMEM_out[27]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[20]";
+	CHANNEL = "IMEM_out[26]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[19]";
+	CHANNEL = "IMEM_out[25]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[18]";
+	CHANNEL = "IMEM_out[24]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[17]";
+	CHANNEL = "IMEM_out[23]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[16]";
+	CHANNEL = "IMEM_out[22]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[15]";
+	CHANNEL = "IMEM_out[21]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[14]";
+	CHANNEL = "IMEM_out[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 18;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[13]";
+	CHANNEL = "IMEM_out[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 19;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[12]";
+	CHANNEL = "IMEM_out[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 20;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[11]";
+	CHANNEL = "IMEM_out[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 21;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[10]";
+	CHANNEL = "IMEM_out[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 22;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[9]";
+	CHANNEL = "IMEM_out[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 23;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[8]";
+	CHANNEL = "IMEM_out[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 24;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[7]";
+	CHANNEL = "IMEM_out[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 25;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[6]";
+	CHANNEL = "IMEM_out[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[5]";
+	CHANNEL = "IMEM_out[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[4]";
+	CHANNEL = "IMEM_out[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[3]";
+	CHANNEL = "IMEM_out[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[2]";
+	CHANNEL = "IMEM_out[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 30;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[1]";
+	CHANNEL = "IMEM_out[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 31;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "PC_branch_offsesgdrt[0]";
+	CHANNEL = "IMEM_out[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 32;
 	TREE_LEVEL = 1;
-	PARENT = 0;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg";
+	CHANNEL = "IMEM_out[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 33;
-	TREE_LEVEL = 0;
-	CHILDREN = 34, 35, 36, 37, 38, 39, 40, 41;
+	TREE_LEVEL = 1;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg[7]";
+	CHANNEL = "IMEM_out[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 34;
 	TREE_LEVEL = 1;
-	PARENT = 33;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg[6]";
+	CHANNEL = "IMEM_out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 35;
 	TREE_LEVEL = 1;
-	PARENT = 33;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg[5]";
+	CHANNEL = "IMEM_out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 36;
 	TREE_LEVEL = 1;
-	PARENT = 33;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg[4]";
+	CHANNEL = "IMEM_out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 37;
 	TREE_LEVEL = 1;
-	PARENT = 33;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg[3]";
+	CHANNEL = "IMEM_out[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 38;
 	TREE_LEVEL = 1;
-	PARENT = 33;
+	PARENT = 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg[2]";
+	CHANNEL = "output_sys";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 39;
-	TREE_LEVEL = 1;
-	PARENT = 33;
+	TREE_LEVEL = 0;
+	CHILDREN = 40, 41, 42, 43, 44, 45, 46, 47;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg[1]";
+	CHANNEL = "output_sys[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 40;
 	TREE_LEVEL = 1;
-	PARENT = 33;
+	PARENT = 39;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data1sg[0]";
+	CHANNEL = "output_sys[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 41;
 	TREE_LEVEL = 1;
-	PARENT = 33;
+	PARENT = 39;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx";
+	CHANNEL = "output_sys[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 42;
-	TREE_LEVEL = 0;
-	CHILDREN = 43, 44, 45, 46, 47, 48, 49, 50;
+	TREE_LEVEL = 1;
+	PARENT = 39;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx[7]";
+	CHANNEL = "output_sys[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 43;
 	TREE_LEVEL = 1;
-	PARENT = 42;
+	PARENT = 39;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx[6]";
+	CHANNEL = "output_sys[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 44;
 	TREE_LEVEL = 1;
-	PARENT = 42;
+	PARENT = 39;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx[5]";
+	CHANNEL = "output_sys[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 45;
 	TREE_LEVEL = 1;
-	PARENT = 42;
+	PARENT = 39;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx[4]";
+	CHANNEL = "output_sys[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 46;
 	TREE_LEVEL = 1;
-	PARENT = 42;
+	PARENT = 39;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx[3]";
+	CHANNEL = "output_sys[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 47;
 	TREE_LEVEL = 1;
-	PARENT = 42;
+	PARENT = 39;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx[2]";
+	CHANNEL = "PC_inc_ID";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 48;
-	TREE_LEVEL = 1;
-	PARENT = 42;
+	TREE_LEVEL = 0;
+	CHILDREN = 49, 50, 51, 52, 53, 54, 55, 56;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx[1]";
+	CHANNEL = "PC_inc_ID[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 49;
 	TREE_LEVEL = 1;
-	PARENT = 42;
+	PARENT = 48;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "REG_data2xfbx[0]";
+	CHANNEL = "PC_inc_ID[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 50;
 	TREE_LEVEL = 1;
-	PARENT = 42;
+	PARENT = 48;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_srcghtd";
+	CHANNEL = "PC_inc_ID[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 51;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 48;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_opdfsgd";
+	CHANNEL = "PC_inc_ID[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 52;
-	TREE_LEVEL = 0;
-	CHILDREN = 53, 54, 55, 56, 57, 58;
+	TREE_LEVEL = 1;
+	PARENT = 48;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_opdfsgd[5]";
+	CHANNEL = "PC_inc_ID[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 53;
 	TREE_LEVEL = 1;
-	PARENT = 52;
+	PARENT = 48;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_opdfsgd[4]";
+	CHANNEL = "PC_inc_ID[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 54;
 	TREE_LEVEL = 1;
-	PARENT = 52;
+	PARENT = 48;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_opdfsgd[3]";
+	CHANNEL = "PC_inc_ID[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 55;
 	TREE_LEVEL = 1;
-	PARENT = 52;
+	PARENT = 48;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_opdfsgd[2]";
+	CHANNEL = "PC_inc_ID[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 56;
 	TREE_LEVEL = 1;
-	PARENT = 52;
+	PARENT = 48;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_opdfsgd[1]";
+	CHANNEL = "PC_inc_EX";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 57;
-	TREE_LEVEL = 1;
-	PARENT = 52;
+	TREE_LEVEL = 0;
+	CHILDREN = 58, 59, 60, 61, 62, 63, 64, 65;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_opdfsgd[0]";
+	CHANNEL = "PC_inc_EX[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 58;
 	TREE_LEVEL = 1;
-	PARENT = 52;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_shamtzf";
+	CHANNEL = "PC_inc_EX[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 59;
-	TREE_LEVEL = 0;
-	CHILDREN = 60, 61, 62, 63, 64;
+	TREE_LEVEL = 1;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_shamtzf[4]";
+	CHANNEL = "PC_inc_EX[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 60;
 	TREE_LEVEL = 1;
-	PARENT = 59;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_shamtzf[3]";
+	CHANNEL = "PC_inc_EX[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 61;
 	TREE_LEVEL = 1;
-	PARENT = 59;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_shamtzf[2]";
+	CHANNEL = "PC_inc_EX[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 62;
 	TREE_LEVEL = 1;
-	PARENT = 59;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_shamtzf[1]";
+	CHANNEL = "PC_inc_EX[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 63;
 	TREE_LEVEL = 1;
-	PARENT = 59;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_shamtzf[0]";
+	CHANNEL = "PC_inc_EX[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 64;
 	TREE_LEVEL = 1;
-	PARENT = 59;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_functxcfb";
+	CHANNEL = "PC_inc_EX[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 65;
-	TREE_LEVEL = 0;
-	CHILDREN = 66, 67, 68, 69, 70, 71;
+	TREE_LEVEL = 1;
+	PARENT = 57;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_functxcfb[5]";
+	CHANNEL = "PC_inc_MEM";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 66;
-	TREE_LEVEL = 1;
-	PARENT = 65;
+	TREE_LEVEL = 0;
+	CHILDREN = 67, 68, 69, 70, 71, 72, 73, 74;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_functxcfb[4]";
+	CHANNEL = "PC_inc_MEM[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 67;
 	TREE_LEVEL = 1;
-	PARENT = 65;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_functxcfb[3]";
+	CHANNEL = "PC_inc_MEM[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 68;
 	TREE_LEVEL = 1;
-	PARENT = 65;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_functxcfb[2]";
+	CHANNEL = "PC_inc_MEM[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 69;
 	TREE_LEVEL = 1;
-	PARENT = 65;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_functxcfb[1]";
+	CHANNEL = "PC_inc_MEM[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 70;
 	TREE_LEVEL = 1;
-	PARENT = 65;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_functxcfb[0]";
+	CHANNEL = "PC_inc_MEM[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Hexadecimal;
 	TREE_INDEX = 71;
 	TREE_LEVEL = 1;
-	PARENT = 65;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result";
+	CHANNEL = "PC_inc_MEM[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 72;
-	TREE_LEVEL = 0;
-	CHILDREN = 73, 74, 75, 76, 77, 78, 79, 80;
+	TREE_LEVEL = 1;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result[7]";
+	CHANNEL = "PC_inc_MEM[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 73;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result[6]";
+	CHANNEL = "PC_inc_MEM[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 74;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 66;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result[5]";
+	CHANNEL = "PC_next_WB";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 75;
-	TREE_LEVEL = 1;
-	PARENT = 72;
+	TREE_LEVEL = 0;
+	CHILDREN = 76, 77, 78, 79, 80, 81, 82, 83;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result[4]";
+	CHANNEL = "PC_next_WB[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 76;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 75;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result[3]";
+	CHANNEL = "PC_next_WB[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 77;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 75;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result[2]";
+	CHANNEL = "PC_next_WB[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 78;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 75;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result[1]";
+	CHANNEL = "PC_next_WB[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 79;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 75;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_result[0]";
+	CHANNEL = "PC_next_WB[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 80;
 	TREE_LEVEL = 1;
-	PARENT = 72;
+	PARENT = 75;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_zero";
+	CHANNEL = "PC_next_WB[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 81;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 75;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_c_out";
+	CHANNEL = "PC_next_WB[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 82;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 75;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_overflow";
+	CHANNEL = "PC_next_WB[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 83;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 75;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_less_than";
+	CHANNEL = "REG_write_outp_WB";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 84;
 	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "ALU_equal";
+	CHANNEL = "REG_write_adr_WB";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 85;
 	TREE_LEVEL = 0;
+	CHILDREN = 86, 87, 88;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "REG_write_adr_WB[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 86;
+	TREE_LEVEL = 1;
+	PARENT = 85;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "REG_write_adr_WB[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 87;
+	TREE_LEVEL = 1;
+	PARENT = 85;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "REG_write_adr_WB[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Hexadecimal;
+	TREE_INDEX = 88;
+	TREE_LEVEL = 1;
+	PARENT = 85;
 }
 
 TIME_BAR

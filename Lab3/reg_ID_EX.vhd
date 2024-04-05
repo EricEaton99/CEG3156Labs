@@ -36,22 +36,56 @@ signal ctrl_signals_toreg, ctrl_signals : std_logic_vector(6 downto 0);
 
 begin
 	
-	ctrl_signals_toreg <= REG_write_outp_toreg & ALU_src_toreg & MEM_write_toreg & MEM_read_toreg & MEM_to_REG_toreg & jump_toreg & branch_toreg;
-	REG_write_outp <= ctrl_signals(0);
-	ALU_src <= ctrl_signals(1);
-	MEM_write <= ctrl_signals(2);
-	MEM_read  <= ctrl_signals(3);
-	MEM_to_REG <= ctrl_signals(4);
-	jump  <= ctrl_signals(5);
-	branch <= ctrl_signals(6);
-	
-	reg_ctrl_signals : entity work.nBit_reg(structural)
-		generic map( 7 )
-		port map(ctrl_signals_toreg,
+	reg_REG_write_outp : entity work.d_flipflop(structural)
+		port map(REG_write_outp_toreg,
 		clk, '1', global_reset,
-		ctrl_signals,
+		REG_write_outp,
 		open);
-			-- parallel_in, clk, preset, clear, q, q_not
+			-- d, clk, preset, clear, q, q_not
+			
+	reg_ALU_src : entity work.d_flipflop(structural)
+		port map(ALU_src_toreg,
+		clk, '1', global_reset,
+		ALU_src,
+		open);
+			-- d, clk, preset, clear, q, q_not
+
+	reg_MEM_write : entity work.d_flipflop(structural)
+		port map(MEM_write_toreg,
+		clk, '1', global_reset,
+		MEM_write,
+		open);
+			-- d, clk, preset, clear, q, q_not
+
+	reg_MEM_read : entity work.d_flipflop(structural)
+		port map(MEM_read_toreg,
+		clk, '1', global_reset,
+		MEM_read,
+		open);
+			-- d, clk, preset, clear, q, q_not
+
+	reg_MEM_to_REG : entity work.d_flipflop(structural)
+		port map(MEM_to_REG_toreg,
+		clk, '1', global_reset,
+		MEM_to_REG,
+		open);
+			-- d, clk, preset, clear, q, q_not
+
+	reg_jump : entity work.d_flipflop(structural)
+		port map(jump_toreg,
+		clk, '1', global_reset,
+		jump,
+		open);
+			-- d, clk, preset, clear, q, q_not
+
+	reg_branch : entity work.d_flipflop(structural)
+		port map(branch_toreg,
+		clk, '1', global_reset,
+		branch,
+		open);
+			-- d, clk, preset, clear, q, q_not
+	
+	
 	
 	reg_REG_write_adr_outp : entity work.nBit_reg(structural)
 		generic map( dasz )
