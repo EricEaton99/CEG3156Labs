@@ -1,0 +1,38 @@
+--- MIPS Single Cycle Processor
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+use ieee.numeric_std.all;
+use work.MIPS_RISK_SingleCycle_VARS.all;
+
+entity reg_WB is
+	port(
+		clk, global_reset : in std_logic;
+		
+		WB_in : in STD_LOGIC_VECTOR(2 downto 0);
+		
+		
+		);
+end reg_WB;
+
+
+architecture structural of reg_WB is
+
+-- wires
+signal WB_t : STD_LOGIC_VECTOR(2 downto 0);
+
+begin
+	
+	reg_WB : entity work.nBit_reg(structural)
+		generic map( 3 )
+		port map(WB_in,
+		clk, '1', global_reset,
+		WB_t,
+		open);
+			-- parallel_in, clk, preset, clear, q, q_not	
+	
+	Branch <= WB_t(0);
+	MemRead <= WB_t(1);
+	MemWrite <= WB_t(2);
+			
+end structural;

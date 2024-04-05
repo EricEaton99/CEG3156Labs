@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS_RISK_PipelinedProcessor
-Fri Apr 05 10:21:34 2024
+Fri Apr 05 17:13:14 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -198,7 +198,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 05 10:21:34 2024      ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 05 17:13:14 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; MIPS_RISK_PipelinedProcessor               ;
 ; Top-level Entity Name              ; top_level                                  ;
@@ -2865,7 +2865,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Apr 05 10:21:31 2024
+    Info: Processing started: Fri Apr 05 17:13:10 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_RISK_PipelinedProcessor -c MIPS_RISK_PipelinedProcessor
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file top_level.bdf
@@ -2978,6 +2978,29 @@ Info (12021): Found 2 design units, including 1 entities, in source file reg_ex_
 Info (12021): Found 2 design units, including 1 entities, in source file reg_mem_wb.vhd
     Info (12022): Found design unit 1: reg_MEM_WB-structural
     Info (12023): Found entity 1: reg_MEM_WB
+Info (12021): Found 1 design units, including 1 entities, in source file pipelined_processer.bdf
+    Info (12023): Found entity 1: pipelined_processer
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_sign_extend_mbits.vhd
+    Info (12022): Found design unit 1: nBit_sign_extend_mBits-structural
+    Info (12023): Found entity 1: nBit_sign_extend_mBits
+Info (12021): Found 2 design units, including 1 entities, in source file reg_id_ex_piplined.vhd
+    Info (12022): Found design unit 1: reg_ID_EX_piplined-structural
+    Info (12023): Found entity 1: reg_ID_EX_piplined
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_mux4.vhd
+    Info (12022): Found design unit 1: nBit_mux4-rtl
+    Info (12023): Found entity 1: nBit_mux4
+Info (12021): Found 2 design units, including 1 entities, in source file id_ex_mux.vhd
+    Info (12022): Found design unit 1: ID_EX_mux-structural
+    Info (12023): Found entity 1: ID_EX_mux
+Info (12021): Found 2 design units, including 1 entities, in source file reg_m.vhd
+    Info (12022): Found design unit 1: reg_M-structural
+    Info (12023): Found entity 1: reg_M
+Info (12021): Found 2 design units, including 1 entities, in source file reg_wb.vhd
+    Info (12022): Found design unit 1: reg_WB-structural
+    Info (12023): Found entity 1: reg_WB
+Info (12021): Found 2 design units, including 1 entities, in source file nbit_equals_comparator.vhd
+    Info (12022): Found design unit 1: nBit_equals_comparator-structural
+    Info (12023): Found entity 1: nBit_equals_comparator
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
 Warning (275004): Undeclared parameter IMEM
 Warning (275006): Can't find a definition for parameter LPM_FILE -- assuming IMEM was intended to be a quoted string
@@ -3276,9 +3299,9 @@ Info (21057): Implemented 673 device resources after synthesis - the final resou
     Info (21061): Implemented 552 logic cells
     Info (21064): Implemented 40 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 212 warnings
-    Info: Peak virtual memory: 4767 megabytes
-    Info: Processing ended: Fri Apr 05 10:21:34 2024
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4752 megabytes
+    Info: Processing ended: Fri Apr 05 17:13:14 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:01
 
 

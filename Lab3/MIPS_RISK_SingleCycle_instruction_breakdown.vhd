@@ -8,7 +8,7 @@ port(
 	instruction : in std_logic_vector(isz-1 downto 0);
 	instruction_type : out std_logic_vector(5 downto 0);
 	rs, rt, rd : out std_logic_vector(dasz-1 downto 0);
-	shamt : out std_logic_vector(10 downto 6);
+	shamt : out std_logic_vector(4 downto 0);
 	funct : out std_logic_vector(5 downto 0);
 	address_b : out std_logic_vector(absz-1 downto 0);
 	address_j : out std_logic_vector(ajsz-1 downto 0));
