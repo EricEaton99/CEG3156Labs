@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Hazard_Detection_Unit is 
+	port(rs_ID, rt_ID : std_logic_vector(4 downto 0); -- Decode stage (ID) of the pipeline
+		  rd_EX : std_logic_vector(4 downto 0); -- Execute stage (EX) of the pipeline
+		  RegWrite_EX : in std_logic; -- EX stage flag to know whether we're writing into a register or not
+		  rd_MEM : in std_logic_vector(4 downto 0); -- Memory stage (MEM) of the pipeline
+		  RegWrite_MEM : in std_logic; -- MEM stage flag to know whether we're writing into a register or not
+		  -- Outputs
+		  Stall : out std_logic;
+		  ForwardA, ForwardB : out std_logic_vector(1 downto 0));
+end Hazard_Detection_Unit;
+
+architecture Structural of Hazard_Detection_Unit is
+begin
+    -- Stall the pipeline if there is a hazard that requires it
+    Stall <= '1' when (EX_MEM_RegWrite = '1' AND (EX_MEM_RegRd = ID_EX_RegRs OR EX_MEM_RegRd = ID_EX_RegRt)) OR
+                      (MEM_WB_RegWrite = '1' AND (MEM_WB_RegRd = ID_EX_RegRs OR MEM_WB_RegRd = ID_EX_RegRt))
+                 else '0';
+    
+    -- this will trigger if a branch is taken to handle control hazards
+    Flush <= BranchTaken;
